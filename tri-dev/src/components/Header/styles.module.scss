@@ -2,18 +2,24 @@
 
 .container {
     display: flex;
-    padding: 1% 17% 5% 17%;
+    padding: 1% 17% 0 17%;
     flex-direction: row;
-    background: radial-gradient(circle, #0069ff 0%, #014e9b 100%);
+    background: radial-gradient(circle, #0069ff 20%, #014e9b 100%);
     min-height: 65vh;
+    align-items: end;
     .section {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        max-width: 500px;
-
+        justify-content: start;
+        min-width: auto;
+        align-items: start;
+        margin-bottom: 10%;
         .NavBar {
             margin-bottom: 50px;
+            @media(max-width: 761px){
+                margin-bottom: 30px;
+    
+            }
         }
 
         .title {
@@ -21,6 +27,19 @@
             color: $text-color-white;
             margin-bottom: 25px;
             line-height: 1.2;
+            width: 100%;
+            @media(max-width: 642px){
+               width: 40%;
+            }
+
+            @media(max-width: 997px){
+                margin-bottom: 20px;
+                width: 80%;
+                font-size: 30px;
+            }
+
+
+        
         }
 
 
@@ -28,13 +47,25 @@
         .subTitle {
             color: $text-color-white;
             margin-bottom: 35px;
+            width: 80%;
+            @media(max-width: 997px){
+                margin-bottom: 40px;
+                width: 90%;
+            
+            }
         }
 
         .buttons {
             display: flex;
             flex-direction: row;
+            width: 100%;
+            @media(max-width: 953px){
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+            }
             .buttonPlains{
-                padding: 2% 4.5% 2% 7%;
+                padding: 10px 20px 10px 25px;
                 box-shadow: none;
                 background-color: $primary-soft;
                 color: $text-color-white;
@@ -42,20 +73,25 @@
                 font-weight: 1000;
                 font-size: 1.2rem;
                 transition: transform 0.4s ease;
+
                 &:hover{
                     background-color: $text-color-white;
                     color: $primary;
                     transform: translateY(-7px);
              
                 }
-                @media(max-width: 700px){
-                    font-size: 0.8rem;
+                @media(max-width: 761px){
+                    font-size: 1rem;
                 }
             }
 
             .buttonWhatsapp{
-                padding: 2% 4.5% 2% 7%;
-                box-shadow: none;
+                padding: 10px 20px 10px 25px;
+                box-shadow: none;    .headerImage{
+                    width: 500px;
+                    height: 500px;
+                }
+            
                 background-color: none;
                 color: $text-color-white;
                 border-radius: 10px;
@@ -68,11 +104,12 @@
                     background-color: $primary-soft;
      
                 }
-                @media(max-width: 400px){
-                    padding: 5% 5% 5% 8%;
+                @media(max-width: 768px){
+                    font-size: 1rem;
                 }
-                @media(max-width: 700px){
-                    font-size: 0.8rem;
+                @media(max-width: 953px){
+                    margin-left: 0;
+                    margin-top: 20px;
                 }
             }
 
@@ -86,22 +123,60 @@
 
         }
 
+        @media(max-width: 761px){
+            margin-bottom: -20%;
+        }
+
+        @media(max-width: 1321px){
+            margin-bottom: auto;
+        }
+
     }
 
     
     .sectionTwo {
         display: flex;
-        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+
     }
 
-    @media(max-width: 700px){
-        padding: 3% 4% 5% 4%;
+    .headerImage{
+        width: 600px;
+        height: 600px;
+        margin-left: auto;
+        @media(max-width: 817px){
+            width: 500px;
+            height: 500px;
+
+        }
+        @media(max-width: 642px){
+            width: 400px;
+            height: 400px;
+        }
+        @media(max-width: 419px){
+            width: 300px;
+            height: 300px;
+        }
+
     }
+
+    @media(max-width: 768px){
+        padding: 3% 0 0 4%;
+    }
+    @media(max-width: 1321px){
+        padding: 1% 0 0 2%;
+    }
+
+    
 }
 
-@media(max-width: 780px) {
+@media(max-width: 761px) {
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: start;
     }
 }
