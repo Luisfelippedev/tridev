@@ -6,6 +6,8 @@ import { Qualities } from "@/components/ Qualities";
 import { Box } from "@mui/material";
 import Skills from "@/components/Skills";
 import { PlanSection } from "@/components/PlanSection";
+import Portfolio from "@/components/Portfolio";
+
 
 export default function Home() {
   return (
@@ -16,9 +18,11 @@ export default function Home() {
         <Qualities />
       </Box>
       <Skills />
+      <Portfolio />
       <Box className={styles.backgroundPlanSection}>
         <PlanSection />
       </Box>
+      
     </main>
   );
 }
