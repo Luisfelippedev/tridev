@@ -6,17 +6,15 @@ import { Qualities } from "@/components/ Qualities";
 import { Box } from "@mui/material";
 import Skills from "@/components/Skills";
 
-
 export default function Home() {
   return (
     <main className={styles.main}>
       <Announcement />
       <Header />
-        <Box className={styles.backgroundQuality}>
-          <Qualities />
-        </Box>
+      <Box className={styles.backgroundQuality}>
+        <Qualities />
+      </Box>
       <Skills />
-
     </main>
   );
 }
