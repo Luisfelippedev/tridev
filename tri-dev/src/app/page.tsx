@@ -5,6 +5,7 @@ import { Announcement } from "@/components/Announcement";
 import { Qualities } from "@/components/ Qualities";
 import { Box } from "@mui/material";
 import Skills from "@/components/Skills";
+import { PlanSection } from "@/components/PlanSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         <Qualities />
       </Box>
       <Skills />
+      <Box className={styles.backgroundPlanSection}>
+        <PlanSection />
+      </Box>
     </main>
   );
 }
