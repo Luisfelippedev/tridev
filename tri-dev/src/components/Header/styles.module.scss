@@ -7,6 +7,7 @@
     background: radial-gradient(circle, #0069ff 20%, #014e9b 100%);
     min-height: 65vh;
     align-items: end;
+
     .section {
         display: flex;
         flex-direction: column;
@@ -14,8 +15,10 @@
         min-width: auto;
         align-items: start;
         margin-bottom: 10%;
+
         .NavBar {
             margin-bottom: 50px;
+            width: 100%;
             @media(max-width: 761px){
                 margin-bottom: 30px;
     

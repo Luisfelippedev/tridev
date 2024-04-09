@@ -1,0 +1,83 @@
+@import "../../themes/theme.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 8rem;
+
+    .BoxTitle {
+        max-width: 980px;
+        padding: 20px;
+    }
+
+    .BoxTitle h1 {
+        font-size: 36px;
+    }
+
+    .BoxTitle p {
+        margin-top: 10px;
+        color: $text-color-secondary;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 64px 20px;
+        gap: 70px;
+
+        .card {
+            text-align: left;
+            max-width: 250px;
+
+            .containerIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary;
+                font-size: 43px;
+                padding: 13px;
+                border-radius: 10px;
+                width: 69px;
+                height: 69px;
+                margin-bottom: 30px;
+
+                .icon {
+                    width: 43px;
+                    height: 43px;
+                    color: $text-color-white;
+                }
+            }
+        }
+
+        .card h1 {
+            font-size: 37px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: $text-color-secondary;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .cards {
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+
+}
