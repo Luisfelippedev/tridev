@@ -35,7 +35,7 @@
 
       .textAnnouncement{
         color: #8e92a4;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 1rem;
         white-space: nowrap;
       }
@@ -64,7 +64,7 @@
 
             .textLinkWhatsapp{
                 font-size: 0.9rem;
-                font-weight: 500;
+                font-weight: 600;
             }
         }
 
@@ -95,12 +95,20 @@
             align-items: center;
             justify-content: center;
             font-size: 0.9rem;
-            font-weight: 800;
+            font-weight: 900;
             white-space: nowrap;
     
         }
     }
 
+    @media (max-width: '1700px') {
+        padding: 1% 2%;
+    }
+
+    @media (max-width: '1000px') {
+        display: none;
+    }
+  
       
 
 }

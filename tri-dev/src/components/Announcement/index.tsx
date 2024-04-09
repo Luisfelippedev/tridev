@@ -36,7 +36,7 @@ export const Announcement = () => {
 
         <Button
           sx={{
-            padding: "5px 5px 5px 15px !important",
+            padding: "5px 1px 5px 8px !important",
             ":hover": { boxShadow: "none", backgroundColor: "#006affe4" },
           }}
           color="primary"
