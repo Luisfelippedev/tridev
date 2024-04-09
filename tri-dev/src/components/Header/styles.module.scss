@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    margin: 10px 0;
+    padding: 0 10%;
+    flex-direction: row;
+    background-color: #096eeb;
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 500px;
+
+        .NavBar {
+            margin-bottom: 50px;
+        }
+
+        .title {
+            font-size: 56px;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .subTitle {
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    .sectionTwo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 780px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
