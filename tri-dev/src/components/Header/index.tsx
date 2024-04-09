@@ -5,6 +5,8 @@ import styles from "./styles.module.scss";
 import NavBar from "../NavBar";
 import { Box, Button } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import Image from "next/image";
+import homemLaptopImg from "../../../public/homem-laptop.png";
 
 const Header = () => {
   return (
@@ -39,7 +41,10 @@ const Header = () => {
           </Button>
         </Box>
       </Box>
-      <Box className={styles.sectionTwo}></Box>
+      {/* <Box className={styles.sectionTwo}>
+        
+      </Box> */}
+      <Image className={styles.headerImage} src={homemLaptopImg} alt="homem-laptop" width={550} height={550} />
     </Box>
   );
 };
