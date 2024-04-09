@@ -1,0 +1,108 @@
+@import '../../themes/theme.scss';
+
+.container{
+    padding: 0.5% 16.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @mixin box{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .firstBox{
+      @include box;
+
+      .inativeButton{
+        background-color: #2bd64e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1% 1.6%;
+        border-radius: 5px;
+            .textInativeButton{
+                color: white;
+                font-size: 0.7rem;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+      }
+
+      .textAnnouncement{
+        color: #8e92a4;
+        font-weight: 400;
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+
+
+    }
+
+    .lastBox{
+        @include box;
+    
+        .linkWhatsapp{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #8e92a4;
+            white-space: nowrap;
+            &:hover{
+                color: $primary-button;
+                .iconWhatsapp{
+                    color: $primary-button;
+                    
+                }
+            }
+
+            .textLinkWhatsapp{
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+        }
+
+        .boxIconWhatsApp{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+
+            .iconWhatsapp{
+                font-size: 1rem;
+                 margin-bottom: 0.8rem;
+                 margin-left: 0.2rem;
+                 color: #8e92a4;
+                
+            }
+    
+        }
+
+        .lastBox .Button{
+            :hover{
+                background-color: red;
+            }
+        }
+
+        .textButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 800;
+            white-space: nowrap;
+    
+        }
+    }
+
+      
+
+}
+
+
