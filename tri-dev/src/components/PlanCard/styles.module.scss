@@ -1,0 +1,217 @@
+@import '../../themes/theme.scss';
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    justify-content: center;
+    box-sizing: border-box;
+    @media(max-width: 1264px){
+        width: 470px;
+    }
+
+    @media(max-width: 999px){
+        width: 700px;
+    }
+    @media(max-width: 891px){
+        width: 550px;
+    }
+
+    @media(max-width: 693px){
+        width: 490px;
+    }
+
+    @media(max-width: 514px){
+        width: 450px;
+
+    }
+
+    @media(max-width: 497px){
+        width: 395px;
+    }
+
+    @media(max-width: 434px){
+        width: 350px;
+        padding: 0 7% 10% 7%;
+    }
+
+    @media(max-width: 390px){
+        width: 320px;
+        min-height: 800px;
+        padding: 0 7% 10% 7%;
+    }
+
+
+
+    .firstBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 2.5%;
+        width: 100%;
+        min-height: 190px;
+        justify-content: space-around;
+        @media(max-width: 390px){
+            padding-bottom: 0;
+        }
+        .title{
+            font-size: 3rem;
+            font-weight: 800;
+            color: $text-color-primary;
+            text-align: center;
+            line-height: 50px;
+            @media(max-width: 514px){
+                font-size: 2.5rem;
+                
+            }
+            @media(max-width: 434px){
+                font-size: 1.8rem;
+                margin-top: 25px;
+            }
+            @media(max-width: 390px){
+                font-size: 1.7rem;
+
+            }
+
+        }   
+
+        .subTitle{
+            font-size: 2rem;
+            font-weight: 600;
+            color: $text-color-primary;
+            @media(max-width: 514px){
+                font-size: 1.4rem;
+                
+            }
+            @media(max-width: 390px){
+                font-size: 1.3rem;
+                margin-top: 25px;
+            }
+    
+        }
+
+        .textConsult{
+            font-size: 3rem;
+            font-weight: 800;
+            color: $primary;
+            margin-top: 8px;
+            @media(max-width: 390px){
+                font-size: 2rem;
+                margin-top: 25px;
+            }
+            @media(max-width: 434px){
+                font-size: 1.8rem;
+                margin-top: 25px;
+            }
+   
+        }
+    }
+
+    .secondBox{
+        width: 100%;
+        .list{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            width: 100%;
+            text-decoration: none;
+            list-style-type: none;
+            .list, li{
+                margin-top: 15px;
+                width: 100%;
+                text-decoration: none;
+                color: $text-color-secondary;
+                font-size: 1rem;
+                .iconCheck{
+                    color: $secondary;
+                    width: 15px;
+                    margin-right: 0.3rem;
+                }
+            }
+        }
+    }
+
+    .lastBox{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        width: 100%;
+        .buttonPlains{
+            width: 100%;
+            height: 55px;
+
+            .textButton{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            .iconWhatsapp{
+                margin-left: 10px;
+                margin-bottom: 15px;
+                width: 20px;
+            }
+          
+        }
+    }
+
+    .boxMethodsPayment{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        .cardMethodPayment{
+            display: flex;
+            padding: 0 3%;
+            background-color: #ebebeb4d;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            .imgMethodPayment{
+                width: 100px;
+                height: 90px;
+                
+                @media(max-width: 330px){
+                    width: 50px;
+                    height: 50px;
+                }
+                @media(max-width: 434px){
+                    width: 50px;
+                    height: 50px;
+                }
+            } 
+
+        }
+    
+    }
+    .boxLastText{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;   
+        
+        .lastText{
+            color: $text-color-secondary;
+            width: 80%;
+            margin-top: 25px;
+            text-align: center;
+
+            @media(max-width: 390px){
+                font-size: 0.6rem;
+                width: 100%;
+            }
+        }
+    }
+  
+
+ 
+}
+
+ 

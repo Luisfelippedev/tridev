@@ -9,6 +9,10 @@
     margin-top: 100px;
     margin-bottom: 5rem;
 
+    @media(max-width: 900px) {
+        margin-top: 170px;
+    }
+
     .BoxTitle {
         max-width: 980px;
         padding: 20px;
@@ -57,7 +61,7 @@
         }
 
         .card h1 {
-            font-size: 37px;
+            font-size: 35px;
             margin-bottom: 15px;
         }
 

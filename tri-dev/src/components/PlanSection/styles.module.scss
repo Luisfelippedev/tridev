@@ -1,0 +1,20 @@
+
+.container{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 80px; /* Espaçamento entre as colunas */  
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(max-width: 1076px){
+        grid-template-columns: 1fr; /* Uma coluna */
+    }
+    @media(max-width: 1264px){
+        gap: 60px; /* Espaçamento entre as colunas */  
+    }
+    @media(max-width: 330px){
+        padding: 25% 5% 0 5%;
+    }
+
+}
