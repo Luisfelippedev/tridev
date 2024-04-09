@@ -3,7 +3,6 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Link from "next/link";
 import { Button, Box } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import { StyleRegistry } from "styled-jsx";
 
 export const Announcement = () => {
   return (
@@ -36,8 +35,12 @@ export const Announcement = () => {
 
         <Button
           sx={{
-            padding: "5px 1px 5px 8px !important",
+            padding: "5px 2px 5px 10px !important",
             ":hover": { boxShadow: "none", backgroundColor: "#006affe4" },
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: "10px",
           }}
           color="primary"
           variant="contained"
