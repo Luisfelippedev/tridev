@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import { Announcement } from "@/components/Announcement";
 import { Qualities } from "@/components/ Qualities";
 import { Box } from "@mui/material";
+import Skills from "@/components/Skills";
+
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
         <Box className={styles.backgroundQuality}>
           <Qualities />
         </Box>
+      <Skills />
 
     </main>
   );
