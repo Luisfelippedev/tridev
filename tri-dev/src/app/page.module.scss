@@ -1,12 +1,10 @@
 .main{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .backgroundQuality{
-  position: relative; /* Define o posicionamento relativo para que o posicionamento absoluto funcione dentro deste container */
+  position: relative; 
   width: 100%;
   display: flex;
   justify-content: center;

@@ -1,57 +1,80 @@
 @import '../../themes/theme.scss';
 
-
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     padding: 1.1% 5%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
-    position: absolute; /* Define o posicionamento absoluto para sobrepor o conteúdo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
     bottom: -90px;
-    background-color: #fff; /* Cor de fundo do elemento sobreposto */
-    transform: translateY(-50%); /* Move o elemento para cima para centralizá-lo */
-    z-index: 1; /* Define a ordem de sobreposição */
+    background-color: #fff;
+    transform: translateY(-50%);
+    z-index: 1;
     border-radius: 15px;
-    .card{
+
+    @media(max-width: 1500px){
+        bottom: -70px;
+    }
+    @media(max-width: 1139px){
+        width: 95%;
+    }
+    @media(max-width: 900px){
+        flex-direction: column;
+        bottom: -180px;
+        width: 75%;
+    }
+
+    @media(max-width: 569px){
+        bottom: -150px;
+    }
+
+    @media(max-width: 524px){
+        width: 90%;
+    }
+
+    @media(max-width: 328px){
+        bottom: -200px;
+    }
+
+
+
+    .card {
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-right: 1px solid #ebebeb;
-        
-        .handsIcon{
+        @media(max-width: 900px){
+            border: none;
+            margin-top: 15px;
+        }
+
+        .icon {
             color: $primary;
             margin-right: 25px;
             margin-left: 30px;
+            width: 30px;
+            height: 30px;
+            @media (max-width: 1252px) {
+                margin-left: 15px; /* Corrigido o duplo margin-right */
+            }
+
         }
 
-        .textCard{
+        .textCard {
             color: $text-color-primary;
             font-size: 1.4rem;
             font-weight: 800;
             margin-right: 30px;
+            @media (max-width: 1252px) {
+                margin-right: 15px; /* Corrigido o duplo margin-right */
+            }
+            @media(max-width: 738px){
+                font-size: 1rem;
+            }
         }
-
-
-
     }
 
 
-
-}
-
-@media(max-width: 1700px){
-    .container{
-        bottom: -75px;
-    }
-}
-
-@media(max-width: 1246px){
-    .container{
-        width: 95%;
-        bottom: -100px;
-    }
-
-    
 }
