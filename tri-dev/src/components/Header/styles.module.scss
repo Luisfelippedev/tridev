@@ -1,10 +1,11 @@
+@import '../../themes/theme.scss';
+
 .container {
     display: flex;
-    margin: 10px 0;
-    padding: 0 10%;
+    padding: 1% 17% 5% 17%;
     flex-direction: row;
-    background-color: #096eeb;
-
+    background: radial-gradient(circle, #0069ff 0%, #014e9b 100%);
+    min-height: 65vh;
     .section {
         display: flex;
         flex-direction: column;
@@ -17,26 +18,84 @@
 
         .title {
             font-size: 56px;
-            color: white;
+            color: $text-color-white;
             margin-bottom: 25px;
+            line-height: 1.2;
         }
 
+
+
         .subTitle {
-            color: white;
+            color: $text-color-white;
             margin-bottom: 35px;
         }
 
         .buttons {
             display: flex;
             flex-direction: row;
-            margin-bottom: 50px;
+            .buttonPlains{
+                padding: 2% 4.5% 2% 7%;
+                box-shadow: none;
+                background-color: $primary-soft;
+                color: $text-color-white;
+                border-radius: 10px;
+                font-weight: 1000;
+                font-size: 1.2rem;
+                transition: transform 0.4s ease;
+                &:hover{
+                    background-color: $text-color-white;
+                    color: $primary;
+                    transform: translateY(-7px);
+             
+                }
+                @media(max-width: 700px){
+                    font-size: 0.8rem;
+                }
+            }
+
+            .buttonWhatsapp{
+                padding: 2% 4.5% 2% 7%;
+                box-shadow: none;
+                background-color: none;
+                color: $text-color-white;
+                border-radius: 10px;
+                font-weight: 1000;
+                font-size: 1.2rem;
+                border: 2px solid white;
+                margin-left: 5%;
+                box-sizing: border-box;
+                &:hover{
+                    background-color: $primary-soft;
+     
+                }
+                @media(max-width: 400px){
+                    padding: 5% 5% 5% 8%;
+                }
+                @media(max-width: 700px){
+                    font-size: 0.8rem;
+                }
+            }
+
+            .textPlains{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                white-space: nowrap;
+            }
+
         }
 
     }
 
+    
     .sectionTwo {
         display: flex;
         flex-direction: column;
+    }
+
+    @media(max-width: 700px){
+        padding: 3% 4% 5% 4%;
     }
 }
 

@@ -1,4 +1,6 @@
 import { createTheme } from "@mui/material/styles";
+import './theme.scss';
+
 
 export const theme = createTheme({
   palette: {
@@ -10,6 +12,10 @@ export const theme = createTheme({
       main: "#2bd64e",
       contrastText: "#fff",
     },
+    info: {
+        main: "#1978ff",
+        contrastText: "#fff",
+    }
   },
   components: {
     MuiButton: {
@@ -18,13 +24,6 @@ export const theme = createTheme({
           boxShadow: "none",
         },
       },
-    },
-    MuiAvatar: {
-      styleOverrides: {
-        root: {
-          background: "#68E1FD",
-        },
-      },
-    },
+    }
   },
 });
