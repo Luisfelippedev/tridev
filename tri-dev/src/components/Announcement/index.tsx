@@ -6,7 +6,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export const Announcement = () => {
   return (
-    <Box className={styles.container}>
+    <Box className={styles.container} id='home'>
       <Box className={styles.firstBox}>
         <Box className={styles.inativeButton}>
           <p className={styles.textInativeButton}>A P R O V E I T E</p>

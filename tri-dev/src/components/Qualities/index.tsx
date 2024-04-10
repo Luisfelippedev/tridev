@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 
 export const Qualities = () => {
   return (
-    <Box className={styles.container}>
+    <Box className={styles.container} id='Qualities'>
       <Box className={styles.card}>
         <FaRegHandshake className={styles.icon} />
         <p className={styles.textCard}>Atendimento Expresso</p>
