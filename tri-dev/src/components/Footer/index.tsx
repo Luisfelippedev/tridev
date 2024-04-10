@@ -34,7 +34,7 @@ const Footer = () => {
                 <Box className={styles.collums}>
                     <h3 className={styles.titleClass}>CONTATOS</h3>
                     <hr className={styles.lineTitle} />
-                    <span className={styles.lineContact} > <PhoneEnabledIcon /> &nbsp;9 9356-8182</span>
+                    <span className={styles.lineContact} > <PhoneEnabledIcon /> &nbsp;(83) 99356-8182</span>
                     <span className={styles.lineContact} > <EmailIcon /> &nbsp;Tridev @gmail</span>
                 </Box>
             </Box>
