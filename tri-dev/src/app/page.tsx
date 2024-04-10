@@ -8,6 +8,7 @@ import Skills from "@/components/Skills";
 import { PlanSection } from "@/components/PlanSection";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
+import Call from "@/components/Call";
 
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
         <PlanSection />
       </Box>
       <About />
-
+      <Call />
     </main>
   );
 }
