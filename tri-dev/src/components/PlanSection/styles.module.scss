@@ -1,5 +1,122 @@
+@import '../../themes/theme.scss';
 
-.container{
+.backgroundContainertexts{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+
+}
+
+.containerTexts{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @media(max-width: 1057px){
+        flex-direction: column;
+        align-items: start;
+        padding-bottom: 10%;
+
+    }
+
+    @media(max-width: 999px){
+        width: 85%;
+      
+    }
+
+    @media(max-width: 755px){
+        padding-bottom: 20%;
+    }
+
+    .firstBox{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        gap: 13px;
+        margin-bottom: 8px;
+        @media(max-width: 857px){
+            width: 350px;
+        }
+        @media(max-width: 1057px){
+            width: 100%;
+    
+        }
+
+        @media(max-width: 1057px){
+        height: 200px;
+    
+        }
+
+    
+
+        .textCategory{
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $primary;
+           
+        }
+
+        .textTitleSection{
+            font-size: 2rem;
+            color: $text-color-primary;
+            width: 100%;
+            font-weight: 600;
+
+            @media(max-width: 465px){
+                font-size: 1.8rem;
+            }
+            @media(max-width: 419px){
+                font-size: 1.5rem;
+            }
+            @media(max-width:349px){
+                font-size: 1.3rem;
+            }
+        }
+}
+
+        .lastBox{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            height: 100px;
+            width: 550px;
+            gap: 20px;
+            @media(max-width: 1264px){
+                width: 350px;
+            }
+            @media(max-width: 1057px){
+                width: 550px;
+            }
+            @media(max-width: 603px){
+                width: 100%;
+            }
+        
+
+    
+            .textDescription{
+                font-size: 1rem;
+                color: $text-color-secondary;
+                @media(max-width:626px){
+                    font-size: 0.9rem;
+                }
+            }
+        }
+}
+
+
+
+
+.containerCards{
     display: flex;
     grid-template-columns: repeat(2, 1fr); /* Duas colunas */
     gap: 80px; /* Espaçamento entre as colunas */  
@@ -7,6 +124,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+ 
     @media(max-width: 1076px){
         grid-template-columns: 1fr; /* Uma coluna */
     }
@@ -17,4 +135,8 @@
         padding: 25% 5% 0 5%;
     }
 
+
+    
+
 }
+
