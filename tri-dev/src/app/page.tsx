@@ -7,6 +7,7 @@ import { Box } from "@mui/material";
 import Skills from "@/components/Skills";
 import { PlanSection } from "@/components/PlanSection";
 import Portfolio from "@/components/Portfolio";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -22,7 +23,8 @@ export default function Home() {
       <Box className={styles.backgroundPlanSection}>
         <PlanSection />
       </Box>
-      
+      <About />
+
     </main>
   );
 }
