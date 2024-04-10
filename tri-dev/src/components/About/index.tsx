@@ -7,7 +7,7 @@ import Contacts from '../../../public/contatos.jpg';
 
 const About = () => {
     return (
-        <Box className={styles.container}>
+        <Box className={styles.container} id='About'>
             <Box className={styles.FirstSection}>
                 <Box>
                     <Image className={styles.ImageFirst} src={Trio} alt='logo' />

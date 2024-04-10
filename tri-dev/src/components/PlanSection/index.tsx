@@ -5,7 +5,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const PlanSection = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"}>
+    <Box display={"flex"} flexDirection={"column"} id='price'>
       <Box className={styles.backgroundContainertexts}>
         <Box className={styles.containerTexts}>
         <Box className={styles.firstBox}>
