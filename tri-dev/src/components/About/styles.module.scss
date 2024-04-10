@@ -1,0 +1,97 @@
+@import "../../themes/theme.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+
+    .FirstSection {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        margin-bottom: 70px;
+
+        .ImageFirst {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    .LastSection {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+
+        .ImageLast {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .FirstSection {
+            flex-direction: column;
+            gap: 50px;
+
+            
+        }
+
+        .LastSection {
+            flex-direction: column;
+            gap: 50px;
+
+            
+
+            &>* {
+                order: 1;
+            }
+
+            &> :last-child {
+                order: -1;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        .FirstSection {
+            .ImageFirst {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .LastSection {
+            .ImageLast {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+
+
+    .BoxText {
+        text-align: left;
+        max-width: 700px;
+    }
+
+    .BoxText h3 {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: $primary;
+    }
+
+    .BoxText h1 {
+        margin-bottom: 15px;
+    }
+
+    .BoxText p {
+        color: $text-color-secondary;
+    }
+}
