@@ -99,6 +99,7 @@ const Footer = () => {
             <GitHubIcon /> &nbsp; GitHub
           </a>
         </Box>
+
       </Box>
       <Box className={styles.LastContainer}>
         <Box className={styles.ContentLast}>
