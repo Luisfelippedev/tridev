@@ -44,7 +44,14 @@ const Header = () => {
       {/* <Box className={styles.sectionTwo}>
         
       </Box> */}
-      <Image className={styles.headerImage} src={homemLaptopImg} alt="homem-laptop" width={550} height={550} />
+      <Image
+        className={styles.headerImage}
+        src={homemLaptopImg}
+        alt="homem-laptop"
+        width={550}
+        height={550}
+        objectFit="contain"
+      />
     </Box>
   );
 };
