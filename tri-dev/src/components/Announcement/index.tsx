@@ -37,29 +37,26 @@ export const Announcement = () => {
           </Link>
         </Box>
 
-        <Button
-          sx={{
-            padding: "5px 2px 5px 10px !important",
-            ":hover": { boxShadow: "none", backgroundColor: "#006affe4" },
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            borderRadius: "10px",
-          }}
-          color="primary"
-          variant="contained"
-        >
-          <a
-            target="_blank"
-            style={{ color: "white" }}
-            href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
-            className={styles.textButton}
-          >
-            Quero meu Site
-          </a>
 
-          <NavigateNextIcon />
-        </Button>
+          <Button
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
+            sx={{
+              padding: "5px 2px 5px 10px !important",
+              ":hover": { boxShadow: "none", backgroundColor: "#006affe4" },
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "10px",
+            }}
+            color="primary"
+            variant="contained"
+          >
+            <p className={styles.textButton}>Quero meu Site</p>
+
+            <NavigateNextIcon />
+          </Button>
+
       </Box>
     </Box>
   );

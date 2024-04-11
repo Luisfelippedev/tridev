@@ -8,6 +8,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -27,9 +28,33 @@ const NavBar = () => {
     <Box className={styles.container}>
       <Image className={styles.logo} src={logo} alt="logo" />
       <Box className={styles.menu}>
-        <a href="#skills" className={styles.menuItem}>Conheça</a>
-        <a href="#portfolio" className={styles.menuItem}>Portfólio</a>
-        <a href="#price" className={styles.menuItem}>Preços</a>
+        <Link
+          to="skills"
+          spy={true}
+          smooth={true}
+          duration={600}
+          className={styles.menuItem}
+        >
+          Conheça
+        </Link>
+        <Link
+          to="portfolio"
+          spy={true}
+          smooth={true}
+          duration={600}
+          className={styles.menuItem}
+        >
+          Portfólio
+        </Link>
+        <Link
+          to="price"
+          spy={true}
+          smooth={true}
+          duration={600}
+          className={styles.menuItem}
+        >
+          Preços
+        </Link>
         <span onClick={handleOpen}>
           {menuAberto ? (
             <CloseIcon className={styles.btnMenu} fontSize="large" />

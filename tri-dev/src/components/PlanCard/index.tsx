@@ -99,19 +99,16 @@ export const PlanCard = ({ type }: Prop) => {
 
       <Box className={styles.lastBox}>
         <Button
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
           className={styles.buttonPlains}
           color="secondary"
           variant="contained"
         >
-          <a
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
-            className={styles.textButton}
-          >
-            FALE NO WHATSAPP
-          </a>
+          <p className={styles.textButton}>FALE NO WHATSAPP</p>
           <WhatsAppIcon className={styles.iconWhatsapp} />
         </Button>
+
         <Box className={styles.boxMethodsPayment}>
           <Box className={styles.cardMethodPayment}>
             <Image
