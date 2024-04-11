@@ -96,7 +96,7 @@ const Footer = () => {
           </span>
           <span className={styles.lineContact}>
             {" "}
-            <EmailIcon /> &nbsp;solucoestridev@gmail.com
+            {/* <EmailIcon /> &nbsp;solucoestridev@gmail.com */}
           </span>
         </Box>
       </Box>
