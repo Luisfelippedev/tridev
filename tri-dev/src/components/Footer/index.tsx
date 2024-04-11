@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./styles.module.scss";
 import { Box } from "@mui/material";
@@ -8,6 +9,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import logo from "../../../public/TriDevs.png";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -19,21 +21,51 @@ const Footer = () => {
         <Box className={styles.collums}>
           <h3 className={styles.titleClass}>MENU</h3>
           <hr className={styles.lineTitle} />
-          <a className={styles.line} href="#home">
+          <Link
+            to="Inicio"
+            spy={true}
+            smooth={true}
+            duration={600}
+            className={styles.line}
+          >
             Início
-          </a>
-          <a className={styles.line} href="#Qualities">
+          </Link>
+          <Link
+            to="Qualities"
+            spy={true}
+            smooth={true}
+            duration={600}
+            className={styles.line}
+          >
             Qualidades
-          </a>
-          <a className={styles.line} href="#portfolio">
+          </Link>
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            duration={600}
+            className={styles.line}
+          >
             Portfólio
-          </a>
-          <a className={styles.line} href="#price">
+          </Link>
+          <Link
+            to="price"
+            spy={true}
+            smooth={true}
+            duration={600}
+            className={styles.line}
+          >
             Preços
-          </a>
-          <a className={styles.line} href="#About">
+          </Link>
+          <Link
+            to="About"
+            spy={true}
+            smooth={true}
+            duration={600}
+            className={styles.line}
+          >
             Sobre nós
-          </a>
+          </Link>
         </Box>
         <Box className={styles.collums}>
           <h3 className={styles.titleClass}>REDES SOCIAIS</h3>
