@@ -8,7 +8,7 @@ import AltRouteIcon from '@mui/icons-material/AltRoute';
 
 const Skills = () => {
     return (
-        <Box className={styles.container}>
+        <Box id="skills" className={styles.container}>
             <Box className={styles.BoxTitle}>
                 <h1>Desenvolvemos sites que trazem resultados</h1>
                 <p>Nossa equipe é especializada em conectar o seu negócio com o digital, sempre focada em desenvolver soluções de alta conversão, performance e usabilidade.</p>
@@ -33,7 +33,7 @@ const Skills = () => {
                         <BusinessCenterIcon className={styles.icon} />
                     </Box>
                     <h1>Tecnologia</h1>
-                    <p>Desenvolvimento em WordPress, HTML5, JS e CSS3.</p>
+                    <p>Desenvolvimento em HTML5, JS e CSS3.</p>
                 </Box>
                 <Box className={styles.card}>
                     <Box className={styles.containerIcon}>

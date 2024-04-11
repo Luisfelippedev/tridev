@@ -6,7 +6,7 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export const Announcement = () => {
   return (
-    <Box className={styles.container} id='home'>
+    <Box className={styles.container} id="home">
       <Box className={styles.firstBox}>
         <Box className={styles.inativeButton}>
           <p className={styles.textInativeButton}>A P R O V E I T E</p>
@@ -25,7 +25,11 @@ export const Announcement = () => {
           alignItems={"center"}
           marginRight={2}
         >
-          <Link className={styles.linkWhatsapp} href="#text-buttons">
+          <Link
+            className={styles.linkWhatsapp}
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
+          >
             <p className={styles.textLinkWhatsapp}>Chamar no WhatsApp</p>
             <div className={styles.boxIconWhatsApp}>
               <WhatsAppIcon className={styles.iconWhatsapp} />
@@ -45,7 +49,14 @@ export const Announcement = () => {
           color="primary"
           variant="contained"
         >
-          <p className={styles.textButton}>Quero meu Site</p>
+          <a
+            target="_blank"
+            style={{ color: "white" }}
+            href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
+            className={styles.textButton}
+          >
+            Quero meu Site
+          </a>
 
           <NavigateNextIcon />
         </Button>

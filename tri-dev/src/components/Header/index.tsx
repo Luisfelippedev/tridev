@@ -26,7 +26,9 @@ const Header = () => {
             color="info"
             variant="contained"
           >
-            <p className={styles.textPlains}>Ver Planos</p>
+            <a href="#price" className={styles.textPlains}>
+              Ver Planos
+            </a>
 
             <NavigateNextIcon />
           </Button>
@@ -35,7 +37,13 @@ const Header = () => {
             color="info"
             variant="outlined"
           >
-            <p className={styles.textPlains}>Fale no WhatsApp</p>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
+              className={styles.textPlains}
+            >
+              Fale no WhatsApp
+            </a>
 
             <NavigateNextIcon />
           </Button>
