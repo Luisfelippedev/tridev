@@ -1,37 +1,123 @@
 @import '../../themes/theme.scss';
 
-.container {
+
+.background{
+    width: 100%;
+    min-height: 30vh;
+    background-color: red;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f9ff;
+    padding: 3% 0 5% 0;
+
+    @media(max-width: 500px){
+        padding: 8% 0 10% 0;
+    }
+    
+}
+
+
+.container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f6f9ff;
-    padding: 70px;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
 
-    .carousel {
-        display: flex;
-        margin-bottom: 30px;
-        max-width: 70%;
-        gap: 20px;
+    @media(max-width: 1433px){
+        width: 70%;
+    }
+    @media(max-width: 1024px){
+        width: 60%;
+    }
 
-        .cardImage {
-            border-radius: 10px;
-            width: 280px;
-            height: 560px;
-            object-fit: cover;
-            overflow-y: auto;
+    @media(max-width: 580px){
+        width: 80%;
+   
+    }
+    @media(max-width: 560px){
+        width: 60%;
+    }
+    @media(max-width:356px){
+        width: 70%;
+    }
+    .textCategory{
+        color: $primary;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .title{
+        color: $text-color-primary;
+        font-size: 2.3rem;
+        font-weight: 1000;
+        text-align: center;
+        @media(max-width: 699px){
+            font-size: 1.5rem;
         }
     }
 
-}
+    .carousel{
+        width: 100%;
+        .cardProject{
+            padding: 3% 5%;
+            height: auto;
 
-.container h3 {
-    margin-bottom: 20px;
-    color: $primary;
-}
+        }
+        .imagebox{
+            object-fit: cover;
+            overflow-y: hidden;
+            
+            width: 100%;
+            border-radius: 10px;
+            @media(max-width: 1200px){
+                height: 550px;
+            }
+            @media(max-width: 1078px){
+                height: 500px;
+            }
 
-.container h1 {
-    margin-bottom: 20px;
-    color: $text-color-primary;
-}
+
+            @mixin imageProject{
+                object-fit: cover;
+                width: 100%; 
+                height: auto; 
+                top: 0;
+                position: relative;
+                &:hover {
+                    cursor: grab;
+                    transition: all 1s linear;
+                }
+            }
+
+            .imageProjectLuisPortfolio{
+                @include imageProject;
+                &:hover {
+    
+                    transform: translateY(-10%);
+                   
+                  }
+            }
+            .imageProjectKauePortfolio{
+                @include imageProject;
+                &:hover {
+                    transform: translateY(-20%);
+                  }
+            }
+
+            .imageProjectMatheusPortfolio{
+                @include imageProject;
+                &:hover {
+                    transform: translateY(-20%);
+                  }
+            }
+        }
+          
+        }
+
+
+    }
+
+
