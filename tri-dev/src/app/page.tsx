@@ -2,11 +2,15 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import Header from "@/components/Header";
 import { Announcement } from "@/components/Announcement";
-import { Qualities } from "@/components/ Qualities";
+import { Qualities } from "@/components/Qualities";
 import { Box } from "@mui/material";
 import Skills from "@/components/Skills";
 import { PlanSection } from "@/components/PlanSection";
 import { Portfolio } from "@/components/Portfolio";
+import About from "@/components/About";
+import Call from "@/components/Call";
+import Footer from "@/components/Footer";
+
 
 export default function Home() {
   return (
@@ -21,6 +25,11 @@ export default function Home() {
       <Box className={styles.backgroundPlanSection}>
         <PlanSection />
       </Box>
+      
+      <About />
+      <Call />
+      <Footer />
+
     </main>
   );
 }
