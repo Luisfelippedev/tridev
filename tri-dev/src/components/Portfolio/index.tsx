@@ -10,8 +10,6 @@ import luisPortfolioImage from "../../../public/cards/LuisP.png";
 import kauePortfolioImage from "../../../public/cards/kaueP.png";
 
 export const Portfolio = () => {
-
-
   const settings = {
     dots: true,
     infinite: true,
@@ -62,7 +60,7 @@ export const Portfolio = () => {
   };
 
   return (
-    <Box className={styles.background}>
+    <Box id="portfolio" className={styles.background}>
       <Box className={styles.container}>
         <p className={styles.textCategory}>Portfolio</p>
         <p className={styles.title}>Conheça nossos cases de sucesso</p>

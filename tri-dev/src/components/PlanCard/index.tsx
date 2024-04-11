@@ -35,15 +35,15 @@ export const PlanCard = ({ type }: Prop) => {
             <>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Site com 1 página
-                e 5 seções, além do topo e rodapé
+                e 4 seções, além do topo e rodapé
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Landing page de
                 alta conversão
               </li>
               <li>
-                <FaCheckCircle className={styles.iconCheck} /> Domínio e
-                Hospedagem 1 ano grátis
+                <FaCheckCircle className={styles.iconCheck} /> Domínio grátis
+                por 1 ano e Hospedagem que cabe no seu bolso.
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Integração com
@@ -51,7 +51,7 @@ export const PlanCard = ({ type }: Prop) => {
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Design
-                responsivo, adaptado para celulares e tablets
+                responsivo, adaptado para celulares, tablets e computadores
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Certificado de
@@ -69,8 +69,8 @@ export const PlanCard = ({ type }: Prop) => {
                 você precisar
               </li>
               <li>
-                <FaCheckCircle className={styles.iconCheck} /> Landing page de
-                alta conversão
+                <FaCheckCircle className={styles.iconCheck} /> Site de alta
+                conversão
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Domínio e
@@ -82,7 +82,7 @@ export const PlanCard = ({ type }: Prop) => {
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Design
-                responsivo, adaptado para celulares e tablets
+                responsivo, adaptado para celulares, tablets e computadores
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Certificado de
@@ -90,7 +90,7 @@ export const PlanCard = ({ type }: Prop) => {
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Otimização para
-                campanhas pagas e para o Google
+                SEO
               </li>
             </>
           )}
@@ -103,7 +103,13 @@ export const PlanCard = ({ type }: Prop) => {
           color="secondary"
           variant="contained"
         >
-          <p className={styles.textButton}>FALE NO WHATSAPP</p>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
+            className={styles.textButton}
+          >
+            FALE NO WHATSAPP
+          </a>
           <WhatsAppIcon className={styles.iconWhatsapp} />
         </Button>
         <Box className={styles.boxMethodsPayment}>
@@ -134,7 +140,7 @@ export const PlanCard = ({ type }: Prop) => {
           <>
             <Box className={styles.boxLastText}>
               <p className={styles.lastText}>
-                Adicione seções ao seu site por R$ 150,00 cada nova seção
+                Adicione seções ao seu site por R$ 75,00 cada nova seção
               </p>
             </Box>
           </>

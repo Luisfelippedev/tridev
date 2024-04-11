@@ -27,9 +27,9 @@ const NavBar = () => {
     <Box className={styles.container}>
       <Image className={styles.logo} src={logo} alt="logo" />
       <Box className={styles.menu}>
-        <p className={styles.menuItem}>Conheça</p>
-        <p className={styles.menuItem}>Portfólio</p>
-        <p className={styles.menuItem}>Preços</p>
+        <a href="#skills" className={styles.menuItem}>Conheça</a>
+        <a href="#portfolio" className={styles.menuItem}>Portfólio</a>
+        <a href="#price" className={styles.menuItem}>Preços</a>
         <span onClick={handleOpen}>
           {menuAberto ? (
             <CloseIcon className={styles.btnMenu} fontSize="large" />
