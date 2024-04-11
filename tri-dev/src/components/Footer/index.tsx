@@ -68,6 +68,18 @@ const Footer = () => {
           </Link>
         </Box>
         <Box className={styles.collums}>
+          <h3 className={styles.titleClass}>CONTATOS</h3>
+          <hr className={styles.lineTitle} />
+          <span className={styles.lineContact}>
+            {" "}
+            <PhoneEnabledIcon /> &nbsp;(83) 99319-0450
+          </span>
+          <span className={styles.lineContact}>
+            {" "}
+            <EmailIcon /> &nbsp;solucoestridev@gmail.com
+          </span>
+        </Box>
+        <Box className={styles.collums}>
           <h3 className={styles.titleClass}>REDES SOCIAIS</h3>
           <hr className={styles.lineTitle} />
           <a
@@ -86,18 +98,6 @@ const Footer = () => {
             {" "}
             <GitHubIcon /> &nbsp; GitHub
           </a>
-        </Box>
-        <Box className={styles.collums}>
-          <h3 className={styles.titleClass}>CONTATOS</h3>
-          <hr className={styles.lineTitle} />
-          <span className={styles.lineContact}>
-            {" "}
-            <PhoneEnabledIcon /> &nbsp;(83) 99319-0450
-          </span>
-          <span className={styles.lineContact}>
-            {" "}
-            <EmailIcon /> &nbsp;solucoestridev@gmail.com
-          </span>
         </Box>
       </Box>
       <Box className={styles.LastContainer}>
