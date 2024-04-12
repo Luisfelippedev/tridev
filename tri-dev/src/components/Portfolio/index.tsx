@@ -68,7 +68,7 @@ export const Portfolio = () => {
     <Box id="portfolio" className={styles.background}>
       <Box className={styles.container}>
         <p className={styles.textCategory}>Portfolio</p>
-        <p className={styles.title}>Conheça nossos cases de sucesso</p>
+        <p className={styles.title}>Explore nossos projetos de destaque</p>
         <Box className={styles.carousel}>
           <Slider {...settings}>
             <Box className={styles.cardProject}>

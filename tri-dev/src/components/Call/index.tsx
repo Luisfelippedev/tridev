@@ -9,8 +9,7 @@ const Call = () => {
       <Box className={styles.content}>
         <h1>Quer ter o melhor site do mercado?</h1>
         <p>
-          Não perca tempo e comece agora seu site, nossa equipe está aguardando
-          seu contato! vamos te ajudar!
+          Agora é a hora de iniciar o seu site! Estamos prontos para ajudar, entre em contato conosco e vamos começar juntos
         </p>
         <Button
           target="_blank"

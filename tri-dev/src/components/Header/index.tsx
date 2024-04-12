@@ -17,11 +17,10 @@ const Header = () => {
           <NavBar />
         </Box>
         <h1 className={styles.title}>
-          Invista em um Site Profissional para sua empresa
+        Conectando suas ideias ao mundo, uma página de cada vez.
         </h1>
         <p className={styles.subTitle}>
-          Somos especialistas em fazer sua empresa impactar novos clientes na
-          internet.
+        Transformamos sua visão em uma poderosa presença digital.
         </p>
         <Box className={styles.buttons}>
           <Scroll to="price" spy={true} smooth={true} duration={600}>
