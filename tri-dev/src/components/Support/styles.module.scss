@@ -1,0 +1,174 @@
+@import '../../themes/theme.scss';
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3% 0;
+    @media(max-width: 1078px){
+        padding: 13% 0 0 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 63%;
+        box-sizing: border-box;
+        @media(max-width: 1900px){
+            width: 74%;
+        }
+        @media(max-width:1551px){
+            width: 80%;
+        }
+        @media(max-width:1471px){
+            width: 83%;
+        }
+        @media(max-width:1417px){
+            width: 90%;
+        }
+        @media(max-width:750px){
+            width: 100%;
+        }
+        @media(max-width: 1078px){
+            flex-direction: column;
+        }
+        .firstBox{
+            background-color: #4f4f4f;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            padding: 9% 13% 9% 2%;
+            flex: 1;
+            gap: 20px;
+            @media(max-width: 1078px){
+                padding: 3% 13% 25% 2%;
+            }
+    
+            @media(max-width: 624px){
+                padding: 3% 2% 25% 2%;
+            }
+            .firstText{
+                color: $text-color-white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .titleText{
+                color: $text-color-white;
+                font-size: 2.2rem;
+                font-weight: 1000;
+                @media(max-width: 1275px){
+                    font-size: 1.9rem;
+                }
+                @media(max-width: 1101px){
+                    font-size: 1.8rem;
+                }
+                @media(max-width: 1043px){
+                    font-size: 1.7rem;
+                }
+                @media(max-width: 985px){
+                    font-size: 1.6rem;
+                }
+                @media(max-width: 927px){
+                    font-size: 1.5rem;
+                }
+                @media(max-width: 550px){
+                    font-size: 1.4rem;
+                }
+                @media(max-width: 466px){
+                    font-size: 1.2rem;
+                }
+            }
+            .descriptionText{
+                color: $text-color-white;
+                font-size: 1rem;
+                font-weight: 500;
+                width: 100%;
+                @media(max-width: 1043px){
+                    font-size: 0.9rem;
+                }
+                @media(max-width: 466px){
+                    font-size: 0.8rem;
+                }
+                
+            }
+            .iconTextBox{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                gap: 6px;
+                .icon{
+                    width: 20px;
+                    color: white;
+                }
+                .text{
+                    color: $text-color-white;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        
+        }
+        .lastBox{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            z-index: 88;
+            
+    
+                
+              .tabletImg{
+                position: relative;
+                right: 100px;
+                object-fit: contain !important;
+                width:121%;
+                height: 100%;
+
+                // @media(max-width: 1800px){
+                //     width: 700px;
+                // }
+                @media(max-width: 1306px){
+                    width: 125%;
+                }
+                @media(max-width: 1106px){
+                    width: 128%;
+                }
+                @media(max-width: 975px){
+                    width: 130%;
+                }
+                @media(max-width: 924px){
+                    width: 135%;
+                }
+                @media(max-width: 1078px){
+                    width: 60%;
+                    left: 50%;
+                    transform: (translate(-50%));
+                    top: -120px;
+                }
+                @media(max-width: 884px){
+                    width: 63%;
+                    top: -120px;
+                }
+                @media(max-width: 658px){
+                    width: 75%;
+                    top: -90px;
+                }
+                @media(max-width: 534px){
+                    width: 78%;
+                    top: -70px;
+                }
+                @media(max-width: 394px){
+                    top: -50px;
+                }
+
+              }
+            
+            
+        }
+        
+    }
+}
+

@@ -7,17 +7,24 @@
     align-items: center;
     justify-content: center;
     padding: 80px 30px;
-    background-color: #f6f9ff;
+    background-color: #F5F5F5;
+    gap: 150px;
+    @media(max-width:900px){
+        padding: 0 3% 50px 3%;
+        gap: 0;
+        .backgroundLastImage{
+            height: 250px;
+        }
+    }
+
     .FirstSection {
         display: flex;
         flex-direction: row;
         gap: 100px;
-        margin-bottom: 70px;
 
         .ImageFirst {
-            width: 350px;
-            height: 350px;
-            object-fit: cover;
+            width: 550px;
+            object-fit: contain;
             border-radius: 10px;
         }
     }
@@ -25,12 +32,11 @@
     .LastSection {
         display: flex;
         flex-direction: row;
-        gap: 100px;
+     
 
         .ImageLast {
-            width: 400px;
-            height: 400px;
-            object-fit: cover;
+            width: 600px;
+            object-fit: contain;
             border-radius: 10px;
         }
     }
@@ -38,15 +44,14 @@
     @media (max-width: 900px) {
         .FirstSection {
             flex-direction: column;
-            gap: 50px;
-
+            gap: 0;
+            margin-bottom: 0;
             
         }
 
         .LastSection {
             flex-direction: column;
-            gap: 50px;
-
+            gap: 0;
             
 
             &>* {
@@ -59,22 +64,91 @@
         }
     }
 
-    @media (max-width: 400px) {
+
+    @media (max-width: 1125px) {
         .FirstSection {
+            
             .ImageFirst {
-                width: 250px;
-                height: 250px;
+                position: relative;
+                width: 400px;
+
+                
             }
         }
 
         .LastSection {
             .ImageLast {
-                width: 250px;
-                height: 250px;
+                position: relative;
+                width: 400px;
+                height: 300px;
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        .FirstSection {
+            
+            .ImageFirst {
+                position: relative;
+               bottom: 90px;
+                width: 400px;
+          
+                
+            }
+        }
+
+        .LastSection {
+            .ImageLast {
+                position: relative;
+                
+                width: 400px;
+                height: 300px;
             }
         }
     }
 
+    @media (max-width: 700px) {
+        .FirstSection {
+            
+            .ImageFirst {
+                position: relative;
+              
+                width: 400px;
+
+                
+            }
+        }
+
+        .LastSection {
+            .ImageLast {
+                position: relative;
+                width: 400px;
+
+            }
+        }
+    }
+
+    @media (max-width: 446px) {
+        .FirstSection {
+            
+            .ImageFirst {
+
+                width: 250px;
+
+
+                
+            }
+        }
+
+        .LastSection {
+            .ImageLast {
+                bottom: -40px;
+                width: 250px;
+
+            }
+        }
+    }
+
+    
 
     .BoxText {
         text-align: left;
@@ -89,6 +163,10 @@
 
     .BoxText h1 {
         margin-bottom: 15px;
+        color: $text-color-primary;
+        @media(max-width: 372px){
+            font-size: 1.5rem;
+        }
     }
 
     .BoxText p {

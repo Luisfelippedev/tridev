@@ -5,10 +5,17 @@
     padding: 1% 17% 0 17%;
     flex-direction: row;
     // background: radial-gradient(circle, #0069ff 20%, #014e9b 100%);
-    background: #016AFF;
-    background: radial-gradient(at left top, #016AFF, #0143A3);
+    // background: #016AFF;
+    background: radial-gradient(at left top, #004f40, #000000);
     min-height: 65vh;
     align-items: end;
+    @media(max-width: 1139px){
+        padding: 1% 0 0 2%;
+    }
+
+    @media(max-width: 768px){
+        padding: 3% 0 0 4%;
+    }
 
     .section {
         display: flex;
@@ -17,6 +24,14 @@
         min-width: auto;
         align-items: start;
         margin-bottom: 10%;
+
+        @media(max-width: 1139px){
+            margin-bottom: 20%;
+        }
+   
+        @media(max-width: 779px) {
+            margin-bottom: 0;
+        }
 
         .NavBar {
             margin-bottom: 50px;
@@ -70,7 +85,7 @@
             .buttonPlains{
                 padding: 10px 20px 10px 25px;
                 box-shadow: none;
-                background-color: $primary-soft;
+                background-color: $secondary;
                 color: $text-color-white;
                 border-radius: 10px;
                 font-weight: 1000;
@@ -104,7 +119,8 @@
                 margin-left: 5%;
                 box-sizing: border-box;
                 &:hover{
-                    background-color: $primary-soft;
+                    background-color: $text-color-white;
+                    color: $primary;
      
                 }
                 @media(max-width: 768px){
@@ -122,16 +138,9 @@
                 justify-content: center;
                 font-weight: 900;
                 white-space: nowrap;
+               
             }
 
-        }
-
-        @media(max-width: 761px){
-            margin-bottom: -20%;
-        }
-
-        @media(max-width: 1321px){
-            margin-bottom: auto;
         }
 
     }
@@ -146,50 +155,76 @@
     }
 
     .headerImage{
-        width: 700px;
-        height: 500px;
+        width: 50%;
+        height: 100%;
         margin-left: auto;  
-        @media(max-width: 1097px){
-            width: 500px;
-            height: 450px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        @media(max-width: 1800px){
+           width: 65%;
         }
-        @media(max-width:1021px){
-            height: 380px;
+       
+        @media(max-width: 1189px){
+            width: 60%;
         }
-        @media(max-width: 827px){
-            width: 380px;
-            height: 350px;
-
+        @media(max-width:1139px){
+            width: 50%;
+            margin-bottom: 8%;
         }
-        @media(max-width: 765px){
-            width: 400px;
-        }
-        @media(max-width: 700px){
-            width: 380px;
-            height: 320px;
-
-        }
-        @media(max-width: 642px){
-            width: 400px;
-            height: 370px;
-        }
-        @media(max-width: 501px){
-            height: 320px;
-            width: 350px;
-        }
-        @media(max-width: 419px){
-            margin-top: 20px;
-            width: 250px;
-            height: 230px;
+        @media(max-width: 900px){
+            margin-bottom: 10%;
         }
 
-    }
+        @media(max-width: 569px) {
+            margin-bottom: 15%;
+        }
+        @media(max-width: 501px) {
+            margin-bottom: 18%;
+        }
+        @media(max-width: 459px){
+            margin-top: 15%;
+            width: 70%;
+        }
+        @media(max-width:399px){
+            margin-bottom: 19%;
+        }
+   
+        // @media(max-width: 1097px){
+        //     width: 600px;
+        //     height: 450px;
+        // }
+        // @media(max-width:1139px){
+        //     height: 300px;
+        //     width: 600px;
 
-    @media(max-width: 768px){
-        padding: 3% 0 0 4%;
-    }
-    @media(max-width: 1321px){
-        padding: 1% 0 0 2%;
+        // }
+        // @media(max-width: 827px){
+        //     width: 380px;
+        //     height: 350px;
+
+        // }
+        // @media(max-width: 765px){
+        //     width: 400px;
+        // }
+        // @media(max-width: 700px){
+        //     width: 380px;
+        //     height: 320px;
+
+        // }
+        // @media(max-width: 642px){
+        //     width: 400px;
+        //     height: 370px;
+        // }
+        // @media(max-width: 501px){
+        //     height: 320px;
+        //     width: 350px;
+        // }
+        // @media(max-width: 419px){
+        //     margin-top: -50px;
+        //     width: 250px;
+        //     height: 339px;
+        // }
+
     }
 
     

@@ -98,7 +98,7 @@
         .textConsult{
             font-size: 3rem;
             font-weight: 800;
-            color: $primary;
+            color: $primary-soft;
             margin-top: 8px;
             @media(max-width: 390px){
                 font-size: 2rem;
@@ -130,7 +130,7 @@
                 color: $text-color-secondary;
                 font-size: 1rem;
                 .iconCheck{
-                    color: $secondary;
+                    color: $primary-soft;
                     width: 15px;
                     margin-right: 0.3rem;
                 }

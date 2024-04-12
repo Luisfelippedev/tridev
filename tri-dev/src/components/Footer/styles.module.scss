@@ -1,7 +1,7 @@
 @import '../../themes/theme.scss';
 
 .container {
-    padding: 120px 100px 60px 100px;
+    padding: 30px 100px 30px 100px;
     display: grid;
     grid-template-columns: 225px 200px 250px 200px;
     justify-content: center;
@@ -10,6 +10,7 @@
     justify-items: center;
     background-color: $primary-strong;
 
+    
     .collums {
         display: flex;
         flex-direction: column;
@@ -59,17 +60,16 @@
     }
 
     .line:hover {
-        color: $primary;
+        color: $primary-soft;
     }
 }
 
 @media (max-width: 930px) {
     .container {
-        padding: 120px 10px 60px 10px;
+        padding: 0 10px 60px 10px;
         grid-template-columns: 180px 150px 250px 150px;
 
         .collums {
-
             .imageLogo {
                 width: 150px;
                 height: 150px;
@@ -91,7 +91,7 @@
 
         .collums {
             .imageLogo {
-                margin-top: 20%;
+                margin-top: 10%;
             }
         }
     }
@@ -104,6 +104,9 @@
 
         .collums .imageLogo {
             align-items: center;
+        }
+        .menuHide{
+            display: none;
         }
     }
 
