@@ -10,12 +10,12 @@ import { Portfolio } from "@/components/Portfolio";
 import About from "@/components/About";
 import Call from "@/components/Call";
 import Footer from "@/components/Footer";
-
+import { Support } from "@/components/Support";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Announcement />
+      {/* <Announcement /> */}
       <Header />
       <Box className={styles.backgroundQuality}>
         <Qualities />
@@ -25,11 +25,11 @@ export default function Home() {
       <Box className={styles.backgroundPlanSection}>
         <PlanSection />
       </Box>
-      
+
       <About />
       <Call />
+      <Support />
       <Footer />
-
     </main>
   );
 }

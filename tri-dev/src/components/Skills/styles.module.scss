@@ -16,11 +16,14 @@
     .BoxTitle {
         max-width: 980px;
         padding: 20px;
+        
     }
 
     .BoxTitle h1 {
         font-size: 36px;
+        color: $text-color-primary;
     }
+
 
     .BoxTitle p {
         margin-top: 10px;
@@ -62,7 +65,8 @@
 
         .card h1 {
             font-size: 35px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            color: $text-color-primary;
         }
 
         .card p {
@@ -71,6 +75,12 @@
     }
 
     @media (max-width: 500px) {
+
+        margin-bottom: 0;
+        
+        .BoxTitle{
+            padding: 0 15px 0 15px;
+        }
         .cards {
             gap: 50px;
 
@@ -80,13 +90,18 @@
                 text-align: center;
                 justify-content: center;
                 align-items: center;
+
+                .containerIcon{
+                    margin-bottom: 10px;
+                }
             }
 
             .card h1 {
                 margin-bottom: 0px;
             }
-
+         
         }
+    
     }
 
 }

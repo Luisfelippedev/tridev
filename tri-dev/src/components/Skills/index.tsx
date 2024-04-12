@@ -18,28 +18,28 @@ const Skills = () => {
                     <Box className={styles.containerIcon}>
                         <DataSaverOnIcon className={styles.icon} />
                     </Box>
-                    <h1>Experiência</h1>
+                    <h1 className={styles.textCategory}>Experiência</h1>
                     <p>Colocamos o usuário em primeiro lugar.</p>
                 </Box>
                 <Box className={styles.card}>
                     <Box className={styles.containerIcon}>
                         <DomainVerificationIcon className={styles.icon} />
                     </Box>
-                    <h1>Performance</h1>
+                    <h1 className={styles.textCategory}>Performance</h1>
                     <p>Otimizações diversas para seu site gerar resultados.</p>
                 </Box>
                 <Box className={styles.card}>
                     <Box className={styles.containerIcon}>
                         <BusinessCenterIcon className={styles.icon} />
                     </Box>
-                    <h1>Tecnologia</h1>
+                    <h1 className={styles.textCategory}>Tecnologia</h1>
                     <p>Desenvolvimento em HTML5, JS e CSS3.</p>
                 </Box>
                 <Box className={styles.card}>
                     <Box className={styles.containerIcon}>
                         <AltRouteIcon className={styles.icon} />
                     </Box>
-                    <h1>Flexibilidade</h1>
+                    <h1 className={styles.textCategory}>Flexibilidade</h1>
                     <p>Seu site em constante aprimoramento.</p>
                 </Box>
             </Box>

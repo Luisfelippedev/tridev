@@ -6,7 +6,7 @@ import NavBar from "../NavBar";
 import { Box, Button } from "@mui/material";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Image from "next/image";
-import homemLaptopImg from "../../../public/homem-laptop.png";
+import homemLaptopImg from "../../../public/headerr.svg";
 import { Link as Scroll } from "react-scroll";
 
 const Header = () => {

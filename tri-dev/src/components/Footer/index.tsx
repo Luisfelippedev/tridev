@@ -18,7 +18,7 @@ const Footer = () => {
         <Box className={styles.collums}>
           <Image className={styles.imageLogo} src={logo} alt="logo Tridevs" />
         </Box>
-        <Box className={styles.collums}>
+        <Box className={`${styles.collums} ${styles.menuHide}`}>
           <h3 className={styles.titleClass}>MENU</h3>
           <hr className={styles.lineTitle} />
           <Link
