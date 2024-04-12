@@ -1,0 +1,82 @@
+@import "../../themes/theme.scss";
+
+.background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.1% 10%;
+    .container{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+
+        .titleText{
+            font-size: 3rem;
+            font-weight: 1000;
+
+        }
+        .cardBox{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            align-items: center;
+            justify-content: center;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 450px;
+                width: 450px;
+                padding: 0 3% 0 3%;
+                background-color: rgb(248, 248, 248);
+                border-radius: 50%;
+                .imageBox{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                    .imageSelectProject{
+                        object-fit: contain;
+                        width: 40%;
+                        height: auto;
+                       
+                    }
+
+                    .imageAddedFunctions{
+                        object-fit: contain;
+                        width: 40%;
+                        height: auto;
+                    }
+                    .imageNewProject{
+                        object-fit: contain;
+                        width: 15%;
+                        height: auto;
+                    }
+                }
+               
+                .titleListText{
+                    font-size: 1.8rem;
+                    width: 100%;
+                    font-weight: 700;
+                    height: auto;
+                    color: $primary-soft;
+                    text-align: center;
+                }
+                .list{
+                    text-decoration: none;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                    .textList{
+                        color: $text-color-secondary;
+                    }
+                }
+            }
+        }
+        
+    }
+}

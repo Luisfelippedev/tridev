@@ -11,6 +11,7 @@ import About from "@/components/About";
 import Call from "@/components/Call";
 import Footer from "@/components/Footer";
 import { Support } from "@/components/Support";
+import { TutorialSection } from "@/components/TutorialSection";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       <Box className={styles.backgroundQuality}>
         <Qualities />
       </Box>
-      <Skills />
+      {/* <Skills /> */}
+      <TutorialSection />
       <Portfolio />
       <Box className={styles.backgroundPlanSection}>
         <PlanSection />

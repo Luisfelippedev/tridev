@@ -20,7 +20,7 @@ const About = () => {
           <p>
             Somos em 3, desde 2017 unimos nossa paixão pela tecnologia, enquanto
             cultivamos uma amizade de longa data desde 2008. Hoje possuímos a
-            nossa franquia e conseguimos capacitar e inserir nossos clientes no
+            nossa marca e conseguimos capacitar e inserir nossos clientes no
             cenário da tecnologia moderna. Nossa expertise destaca-se na criação
             de sites dinâmicos, que se adaptam às constantes mudanças da era
             digital. Ao depositar sua confiança conosco, você trilha o caminho

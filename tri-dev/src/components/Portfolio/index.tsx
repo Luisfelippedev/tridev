@@ -3,11 +3,16 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 import styles from "./styles.module.scss";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import luisPortfolioImage from "../../../public/cards/LuisP.png";
 import kauePortfolioImage from "../../../public/cards/kaueP.png";
+import matheusPortfolioImage from "../../../public/cards/MatheusP.png";
+import conceitoMaximoImage from "../../../public/cards/conceito-maximo.png";
+import pbNetImage from "../../../public/cards/pbnet.png";
+import helpSaudeImage from "../../../public/cards/help-saude.png";
 
 export const Portfolio = () => {
   const settings = {
@@ -68,30 +73,80 @@ export const Portfolio = () => {
           <Slider {...settings}>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
+                <Link
+                  href={"https://conceitomaximoenade.com.br/"}
+                  target="_blank"
+                  style={{ height: "100%" }}
+                >
+                  <Image
+                    className={styles.imageProjectConceitoMaximo}
+                    src={conceitoMaximoImage}
+                    alt="conceito-max-img"
+                  />
+                </Link>
+              </Box>
+            </Box>
+            <Box className={styles.cardProject}>
+              <Box className={styles.imagebox}>
                 <Image
-                  className={styles.imageProjectLuisPortfolio}
-                  src={luisPortfolioImage}
-                  alt="portfolio-img"
+                  className={styles.imageHelpSaudeProject}
+                  src={helpSaudeImage}
+                  alt="help-saude-img"
                 />
               </Box>
             </Box>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
                 <Image
-                  className={styles.imageProjectKauePortfolio}
-                  src={kauePortfolioImage}
-                  alt="portfolio-img"
+                  className={styles.imageProjectPbNet}
+                  src={pbNetImage}
+                  alt="pb-net-img"
                 />
               </Box>
             </Box>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
-                <Image
-                  id="imageElement"
-                  className={styles.imageProjectMatheusPortfolio}
-                  src={kauePortfolioImage}
-                  alt="portfolio-img"
-                />
+                <Link
+                  href={"https://kaueronald.vercel.app/"}
+                  target="_blank"
+                  style={{ height: "100%" }}
+                >
+                  <Image
+                    className={styles.imageProjectKauePortfolio}
+                    src={kauePortfolioImage}
+                    alt="kaue-portfolio-img"
+                  />
+                </Link>
+              </Box>
+            </Box>
+            <Box className={styles.cardProject}>
+              <Box className={styles.imagebox}>
+                <Link
+                  href={"https://luisfelippe.vercel.app/"}
+                  target="_blank"
+                  style={{ height: "100%" }}
+                >
+                  <Image
+                    className={styles.imageProjectLuisPortfolio}
+                    src={luisPortfolioImage}
+                    alt="luis-portfolio-img"
+                  />
+                </Link>
+              </Box>
+            </Box>
+            <Box className={styles.cardProject}>
+              <Box className={styles.imagebox}>
+                <Link
+                  href={"https://portifolio-react-nine.vercel.app/"}
+                  target="_blank"
+                  style={{ height: "100%" }}
+                >
+                  <Image
+                    className={styles.imageProjectMatheusPortfolio}
+                    src={matheusPortfolioImage}
+                    alt="matheus-portfolio-img"
+                  />
+                </Link>
               </Box>
             </Box>
           </Slider>

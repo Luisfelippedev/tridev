@@ -16,7 +16,9 @@ const Header = () => {
         <Box className={styles.NavBar}>
           <NavBar />
         </Box>
-        <h1 className={styles.title}>Seu site online em até 7 dias</h1>
+        <h1 className={styles.title}>
+          Invista em um Site Profissional para sua empresa
+        </h1>
         <p className={styles.subTitle}>
           Somos especialistas em fazer sua empresa impactar novos clientes na
           internet.
