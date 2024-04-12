@@ -52,10 +52,10 @@
         flex-direction: column;
         align-items: center;
         border-bottom: 1px solid #ebebeb;
-        padding-bottom: 2.5%;
         width: 100%;
-        min-height: 190px;
-        justify-content: space-around;
+        height: 175px;
+        justify-content: space-between;
+        // justify-content: space-around;
         @media(max-width: 390px){
             padding-bottom: 0;
         }
@@ -114,6 +114,7 @@
 
     .secondBox{
         width: 100%;
+        flex: 2;
         .list{
             margin-top: 20px;
             display: flex;
@@ -143,6 +144,10 @@
         flex-direction: column;
         margin-top: 40px;
         width: 100%;
+        height: 250px;
+        justify-content: start;
+        align-items: center;
+
         .buttonPlains{
             width: 100%;
             height: 55px;

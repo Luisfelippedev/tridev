@@ -17,8 +17,16 @@ export const PlanCard = ({ type }: Prop) => {
       <Box className={styles.firstBox}>
         {type === "landing-page" ? (
           <>
-            <p className={styles.title}>Landing page</p>
-            <p className={styles.subTitle}>Entrega 7 dias</p>
+            <Box
+              display={"flex"}
+              justifyContent={"center"}
+              flexDirection={"column"}
+              alignItems={"center"}
+            >
+              <p className={styles.title}>Landing page</p>
+              <p className={styles.subTitle}>Entrega rápida</p>
+            </Box>
+
             <p className={styles.textConsult}>Sob consulta</p>
           </>
         ) : (
@@ -63,10 +71,6 @@ export const PlanCard = ({ type }: Prop) => {
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Site com quantas
                 seções você precisar
-              </li>
-              <li>
-                <FaCheckCircle className={styles.iconCheck} /> Quantos e-mails
-                você precisar
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Site de alta

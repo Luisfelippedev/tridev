@@ -85,11 +85,41 @@
                 top: 0;
                 position: relative;
                 &:hover {
-                    cursor: grab;
+                    cursor: pointer;
                     transition: all 1s linear;
                 }
+            }  
+            
+            .imageProjectConceitoMaximo{
+                @include imageProject;
+                &:hover {
+                    transform: translateY(-4%);
+                  }
             }
 
+            .imageHelpSaudeProject{
+                @include imageProject;
+                &:hover {
+                    transform: translateY(-22%);
+                    transition: all 2s linear;
+                  }
+            }
+            .imageProjectPbNet{
+
+                @include imageProject;
+                &:hover {
+                    transform: translateY(-18%);
+                    transition: all 2.5s linear;
+                  }
+            }  
+            
+            .imageProjectKauePortfolio{
+                @include imageProject;
+                &:hover {
+                    transform: translateY(-17.5%);
+                    transition: all 2.5s linear;
+                  }
+            }
             .imageProjectLuisPortfolio{
                 @include imageProject;
                 &:hover {
@@ -98,19 +128,19 @@
                    
                   }
             }
-            .imageProjectKauePortfolio{
-                @include imageProject;
-                &:hover {
-                    transform: translateY(-20%);
-                  }
-            }
-
             .imageProjectMatheusPortfolio{
                 @include imageProject;
                 &:hover {
-                    transform: translateY(-20%);
+    
+                    transform: translateY(-21%);
+                    transition: all 2.5s linear;
+                   
                   }
             }
+          
+
+       
+            
         }
           
         }

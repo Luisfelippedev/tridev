@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background-color: $primary-strong;
-    padding: 4rem 1.2rem;
+    padding: 3rem 1.2rem;
 
     .content h1 {
         color: $text-color-white;
@@ -22,13 +22,13 @@
     .button {
         font-weight: 700;
         border-radius: 10px;
-        height: 40px;
+        height: 50px;
         background-color: $text-color-white;
         color: $text-color-primary;
     }
 
     .button:hover {
-        background-color: $primary-soft;
+        background-color: $secondary;
         color: $text-color-white;
     }
 }
