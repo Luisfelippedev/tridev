@@ -16,10 +16,10 @@ export const Support = () => {
             Atendimento personalizado e humanizado
           </p>
           <p className={styles.descriptionText}>
-            A Tridev tem o compromisso de compreender você. Oferecemos
-            atendimento diferenciado, em múltiplas plataformas, para entender e
-            atender suas necessidades com agilidade e precisão. Sua satisfação é
-            nossa prioridade. Somos a solução que você busca.
+            A Tridev está comprometida em compreender suas necessidades.
+            Oferecemos um atendimento diferenciado em diversas plataformas,
+            visando entender e satisfazer suas demandas com agilidade e precisão.
+            Sua satisfação é nossa prioridade absoluta. Conte conosco como a solução que você procura.
           </p>
           <Box
             width={"100%"}

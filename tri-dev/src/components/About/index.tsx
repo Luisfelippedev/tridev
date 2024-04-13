@@ -16,22 +16,20 @@ const About = () => {
         </Box>
         <Box className={styles.BoxText}>
           <h3>Sobre nós</h3>
-          <h1>De lado a lado com você!</h1>
+          <h1>Juntos, rumo ao sucesso!</h1>
           <p>
-            Somos em 3, desde 2017 unimos nossa paixão pela tecnologia, enquanto
-            cultivamos uma amizade de longa data desde 2008. Hoje possuímos a
-            nossa marca e conseguimos capacitar e inserir nossos clientes no
-            cenário da tecnologia moderna. Nossa expertise destaca-se na criação
-            de sites dinâmicos, que se adaptam às constantes mudanças da era
-            digital. Ao depositar sua confiança conosco, você trilha o caminho
-            da excelência digital rumo a um futuro mais promissor.
+            Combinando nossa paixão pela tecnologia desde 2017 e uma amizade cultivada desde 2008,
+            somos uma equipe de três pessoas dedicadas. Ao longo dos anos, desenvolvemos nossas ideias e
+            ajudamos nossos clientes a prosperar no mundo da tecnologia moderna. Nossa especialidade reside
+            na criação de sites dinâmicos que se adaptam às rápidas mudanças da era digital. Ao escolher nossa
+            equipe, você está optando pelo caminho da excelência digital, garantindo um futuro promissor para o seu negócio.
           </p>
         </Box>
       </Box>
       <Box className={styles.LastSection}>
         <Box className={styles.BoxText}>
           <h3>Aproveite!</h3>
-          <h1>Funcionalidades que fazem a diferença</h1>
+          <h1>Recursos que marcam a diferença</h1>
           <p>
             Desperte novas possibilidades com nossa ajuda. Adicione botões
             diretos para WhatsApp e instagram, simplificando a comunicação.
