@@ -6,6 +6,10 @@
     justify-content: center;
     align-items: center;
     padding: 7.1% 10%;
+    @media(max-width: 927px){
+        padding: 18% 0 7% 0;
+
+    }
     .container{
         display: flex;
         height: 80%;
@@ -13,18 +17,38 @@
         align-items: center;
         flex-direction: column;
         gap: 60px;
-
+        @media(max-width: 927px){
+            gap: 100px
+    
+        }
+        @media(max-width: 1017px){
+            gap: 0;
+            padding: 10% 0;
+        }
+        @media(max-width: 414px){
+            padding: 22% 0;
+        }
         .titleText{
             font-size: 3rem;
             font-weight: 1000;
-
+            @media(max-width: 567px){
+                width: 80%;
+                text-align: center;
+            }
+            @media(max-width: 444px){
+                width: 90%;
+            }
         }
         .cardBox{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 80px;
+            gap: 40px;
             align-items: center;
             justify-content: center;
+            @media(max-width: 1017px){
+                grid-template-columns: repeat(1, 1fr);
+            }
+
             .card{
                 display: flex;
                 flex-direction: column;
@@ -33,13 +57,12 @@
                 height: 450px;
                 width: 450px;
                 padding: 0 3% 0 3%;
-                background-color: rgb(248, 248, 248);
-                border-radius: 50%;
                 .imageBox{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: auto;
+                    flex: 2;
                     .imageSelectProject{
                         object-fit: contain;
                         width: 40%;
@@ -49,12 +72,17 @@
 
                     .imageAddedFunctions{
                         object-fit: contain;
-                        width: 40%;
+                        width: 50%;
                         height: auto;
                     }
                     .imageNewProject{
                         object-fit: contain;
-                        width: 15%;
+                        width: 25%;
+                        height: auto;
+                    }
+                    .lastImageProject{
+                        object-fit: contain;
+                        width: 23%;
                         height: auto;
                     }
                 }
@@ -71,12 +99,298 @@
                     text-decoration: none;
                     margin-top: 30px;
                     margin-left: 30px;
+
                     .textList{
                         color: $text-color-secondary;
                     }
                 }
             }
+
         }
         
+        @media(max-width: 1546px){
+            .titleText{
+                font-size: 2.3rem;
+            }
+            .cardBox .card{
+                height: 300px;
+                width: 340px;
+                padding: 0 3% 0 3%;
+
+                .titleListText{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        @media(max-width: 1361px){
+            .cardBox .card{
+                height: 280px;
+                width: 320px;
+                .titleListText{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        @media(max-width: 1183px){
+            .cardBox .card{
+                height: 280px;
+                width: 320px;
+                .titleListText{
+                    font-size: 1.3rem;
+                }
+                .list{
+                    margin-top: 20px;
+                }
+            }
+        }
+        @media(max-width: 1103px){
+            .cardBox .card{
+                height: 250px;
+                width: 250px;
+                .titleListText{
+                    font-size: 1.2rem;
+                }
+                .list{
+                    margin-top: 20px;
+                    .textList{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        @media(max-width: 1017px){
+
+            .cardBox .card{
+                height: 200px;
+                width: 250px;
+                .titleListText{
+                    font-size: 1.2rem;
+                }
+                .list{
+                    margin-top: 20px;
+                    .textList{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        @media(max-width: 897px){
+            .titleText{
+                font-size: 1.8rem;
+            }
+            .cardBox .card{
+                height: 150px;
+                width: 250px;
+                .titleListText{
+                    font-size: 1rem;
+                }
+                .list{
+                    margin-top: 20px;
+                    .textList{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        @media(max-width: 1017px){
+            .cardBox{
+                gap: 0;
+            }
+            .cardBox .card{
+                height: 200px;
+                width: 700px;
+                margin-top: 50px;
+                flex-direction: row;
+                .imageBox .imageSelectProject{
+                    width: 70%;
+                }
+                .imageBox .imageAddedFunctions{
+                    width: 70%;
+                }
+                .imageBox .lastImageProject{
+                    width: 35%;
+     
+                }
+                .imageBox{
+                    width: auto;
+                }
+                .titleListText{
+                    font-size: 1.3rem;
+                    text-align: start;
+                }
+                .list{
+                    margin-top: 15px;
+                    .textList{
+                        font-size: 1rem;
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 741px){
+            .cardBox .card{
+                height: 200px;
+                width: 100%;
+                margin-top: 50px;
+                flex-direction: row;
+                .imageBox .imageSelectProject{
+                    width: 50%;
+                }
+                .imageBox .imageAddedFunctions{
+                    width: 50%;
+                }
+                .imageBox .lastImageProject{
+                    width: 25%;
+     
+                }
+                .imageBox{
+                    width: auto;
+                }
+                .titleListText{
+                    font-size: 1.2rem;
+                    text-align: start;
+                }
+                .list{
+                    margin-top: 15px;
+                    .textList{
+                        font-size: 1rem;
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 605px){
+            .cardBox .card{
+                height: 250px;
+                width: 100%;
+                flex-direction: row;
+                .imageBox .imageSelectProject{
+                    width: 60%;
+                }
+                .imageBox .imageAddedFunctions{
+                    width: 60%;
+                }
+                .imageBox .lastImageProject{
+                    width: 30%;
+     
+                }
+                .imageBox{
+                    width: auto;
+                }
+                .titleListText{
+                    font-size: 1.1rem;
+                    text-align: start;
+                }
+                .list{
+                    margin-top: 15px;
+                    .textList{
+                        font-size: 1rem;
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 535px){
+            .cardBox .card{
+                height: 250px;
+                width: 100%;
+                flex-direction: column;
+                .imageBox .imageSelectProject{
+                    width: 40%;
+                }
+                .imageBox .imageAddedFunctions{
+                    width: 45%;
+                }
+                .imageBox .lastImageProject{
+                    width: 25%;
+     
+                }
+                .imageBox{
+                    width: auto;
+                }
+                .textsBox{
+                    width: 100%;
+   
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .titleListText{
+                    font-size: 1.1rem;
+                    text-align: start;
+                    width: 80%;
+                }
+                .list{
+
+                    margin-top: 15px;
+                    width: 74%;
+                    .textList{
+                        font-size: 1rem;
+                        margin-left: -10px;
+
+                    }
+                }
+            }
+        }
+        @media(max-width: 465px){
+            .cardBox .card{
+                height: 250px;
+                width: 100%;
+                flex-direction: column;
+                .imageBox .imageSelectProject{
+                    width: 40%;
+                }
+                .imageBox .imageAddedFunctions{
+                    width: 45%;
+                }
+                .imageBox .lastImageProject{
+                    width: 25%;
+     
+                }
+                .imageBox{
+                    width: auto;
+                }
+                .textsBox{
+                    width: 100%;
+   
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .titleListText{
+                    font-size: 1.1rem;
+                    text-align: start;
+                    width: 90%;
+                }
+                .list{
+
+                    margin-top: 15px;
+                    width: 84%;
+                    .textList{
+                        font-size: 1rem;
+                        margin-left: -10px;
+
+                    }
+                }
+            }
+        }
+        @media(max-width: 406px){
+            .cardBox .card{
+                .titleListText{
+                    width: 95%;
+                }
+                .list{
+                    width: 89%;
+
+                }
+            }
+        }
+
     }
 }

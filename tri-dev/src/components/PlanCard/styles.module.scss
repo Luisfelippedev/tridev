@@ -58,6 +58,7 @@
         // justify-content: space-around;
         @media(max-width: 390px){
             padding-bottom: 0;
+            height: 200px;
         }
         .title{
             font-size: 3rem;
@@ -147,6 +148,9 @@
         height: 250px;
         justify-content: start;
         align-items: center;
+        @media(max-width: 999px){
+            height: auto;
+        }
 
         .buttonPlains{
             width: 100%;
