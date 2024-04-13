@@ -53,8 +53,13 @@
         font-size: 2.3rem;
         font-weight: 1000;
         text-align: center;
-        @media(max-width: 699px){
-            font-size: 1.5rem;
+        @media(max-width: 800px){
+            font-size: 2rem;
+            
+        }
+        @media(max-width: 558px){
+            font-size: 1.6rem;
+  
         }
     }
 
