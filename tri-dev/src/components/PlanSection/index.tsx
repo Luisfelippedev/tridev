@@ -5,7 +5,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const PlanSection = () => {
   return (
-    <Box display={"flex"} flexDirection={"column"} id="price">
+    <Box display={"flex"} flexDirection={"column"}>
       <Box className={styles.backgroundContainertexts}>
         <Box className={styles.containerTexts}>
           <Box className={styles.firstBox}>
@@ -15,7 +15,7 @@ export const PlanSection = () => {
             </p>
           </Box>
           <Box className={styles.lastBox}>
-            <p className={styles.textDescription}>
+            <p id="price" className={styles.textDescription}>
               Conheça nossos produtos, somos flexiveis e trabalhamos com todo
               tipo de projeto, entre em contato caso precise de um orçamento
               personalizado
@@ -31,7 +31,6 @@ export const PlanSection = () => {
           </Box>
         </Box>
       </Box>
-
       <Box className={styles.containerCards}>
         <PlanCard type="landing-page" />
         <PlanCard type="site-institucional" />
