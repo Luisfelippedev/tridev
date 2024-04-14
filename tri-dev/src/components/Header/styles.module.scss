@@ -22,6 +22,7 @@
                 font-size: 3rem;
                 font-weight: 1000;
                 color: $text-color-white;
+                line-height: 3.5rem;
             }
             .subTitle{
                 font-size: 1rem;
@@ -75,7 +76,7 @@
             justify-content: end;
             align-items: center;
             flex: 1;
-            padding-top: 2%;
+            padding-top: 20px;
             .imageBox{
                 .image{
                     object-fit: contain;
@@ -91,6 +92,7 @@
             .firstSection{
                 .title{
                     font-size: 2.5rem;
+                    line-height: 3rem;
                 }
             }
         }
@@ -104,7 +106,7 @@
     @media(max-width: 1295px){
         padding: 2% 10% 3% 10%;
         .container{
-            min-height: 60vh;
+            min-height: 70vh;
             .firstSection{
                 .title{
                     font-size: 2.5rem;
@@ -122,7 +124,7 @@
     @media(max-width: 1127px){
         padding: 2% 2% 6% 3%;
         .container .firstSection .buttonBox{
-            width: 55%;
+            width: 60%;
         }
     }
 
@@ -136,7 +138,7 @@
             .container{
             .firstSection{
                 .title{
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                 }
             .buttonBox{
                 width: 80%;
@@ -153,7 +155,7 @@
             .firstSection{
                 width: 80%;
                 .title{
-                    font-size: 2.2rem;
+                    font-size: 2.3rem;
                 }
                 .buttonBox{
                     width: 45%;
@@ -182,7 +184,7 @@
        .container{
         .firstSection{
             .title{
-                font-size: 2rem;
+                font-size: 2.3rem;
             }
         .buttonBox{
             width: 55%;
@@ -203,6 +205,7 @@
             .firstSection{
                 .title{
                     font-size: 1.8rem;
+                    line-height: 2.6rem;
                 }
                 .subTitle{
                     font-size: 0.9rem;
@@ -230,7 +233,7 @@
             }
             .lastSection {
                 justify-content: start;
-                padding-top: 12%;
+                padding-top: 110px;
                 .imageBox .image{
                 height: 190px !important;
     
@@ -242,7 +245,7 @@
     @media(max-width: 389px){
         padding-bottom: 15%;
         .container {
-            min-height: 70vh !important;
+            min-height: 0vh !important;
             .firstSection .buttonBox{
                 width: 75%;
             }
@@ -252,7 +255,7 @@
     @media(max-width: 369px){
         padding-bottom: 16%;
         .container {
-            min-height: 71vh !important;
+            min-height: 0vh !important;
             .firstSection .buttonBox{
                 width: 90%;
             }
@@ -261,7 +264,7 @@
     @media(max-width: 337px){
         padding-bottom: 12%;
         .container {
-            min-height: 80vh !important;
+            min-height: 0vh !important;
             .firstSection .buttonBox{
                 width: 90%;
             }
@@ -273,6 +276,10 @@
     @media(max-width: 328px){
         padding-bottom: 6%;
 
+    }
+
+    @media(max-height: 600px){
+        padding-bottom: 10%;
     }
 
 }
