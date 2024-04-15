@@ -26,6 +26,15 @@ a{
 
 }
 
+@media(max-width:500px){
+  .slick-next::before{
+    font-size: 1.5rem !important;
+  }
+  .slick-prev::before{
+    font-size: 1.5rem !important;
+  }
+}
+
 .slick-list{
   height: 600px !important;
 
