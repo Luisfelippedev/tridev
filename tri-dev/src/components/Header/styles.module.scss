@@ -8,7 +8,6 @@
     width: 100%;
     padding: 1% 17% 1.5% 17%;
     gap: 45px;
-    min-height: 68vh;
 
     .container{
         display: flex;
@@ -73,14 +72,13 @@
         .lastSection{
             display: flex;
             flex-direction: column;
-            justify-content: end;
-            align-items: center;
+            justify-content: start;
+            align-items: start;
             flex: 1;
-            padding-top: 20px;
             .imageBox{
                 .image{
                     object-fit: contain;
-
+                    margin-top: 65px;
                 }
             }
         }
@@ -106,7 +104,6 @@
     @media(max-width: 1295px){
         padding: 2% 10% 3% 10%;
         .container{
-            min-height: 70vh;
             .firstSection{
                 .title{
                     font-size: 2.5rem;
@@ -116,6 +113,13 @@
                 width: 60%;
                 gap: 20px;
             }
+            }
+            .lastSection{
+                align-items: end;
+                justify-content: end;
+                .imageBox .image{
+                    margin-top: 130px;
+                }
             }
         }
     }
@@ -134,7 +138,7 @@
     }
 
     @media(max-width: 997px){
-        padding: 2% 2% 8% 3%;
+        padding: 2% 2% 12% 3%;
             .container{
             .firstSection{
                 .title{
@@ -148,8 +152,9 @@
         }
     }
 
-    @media(max-width: 738px){
+    @media(max-width: 800px){
         gap: 25px;
+        padding-bottom: 5%;
         .container{
             flex-direction: column;
             .firstSection{
@@ -158,7 +163,7 @@
                     font-size: 2.3rem;
                 }
                 .buttonBox{
-                    width: 45%;
+                    width: 50%;
                     .firstButton{
                         font-size: 1rem;
                     }
@@ -169,14 +174,24 @@
             }
             .lastSection {
                 align-items: end;
-                .imageBox .image{
-                height: 250px !important;
-    
-              }
+                .imageBox{
+                    .image{
+                        margin-top: -70px;
+                        height: 300px !important;
+                        width: 400px !important;
+                    }
+                }
             }
             
 
             
+        }
+    }
+
+    @media(max-width: 610px){
+        .container .lastSection .imageBox .image{
+            margin-top: 5px;
+            margin-left: 60px;
         }
     }
 
@@ -193,11 +208,6 @@
        }
     }
 
-    @media(max-width: 607px){
-        .container{
-            min-height: 78vh !important;
-        }
-    }
     @media(max-width: 569px){
         padding-bottom: 14%;
         .container{
@@ -211,11 +221,12 @@
                     font-size: 0.9rem;
                 }
                 .buttonBox{
-                    width: 70%;
+                    width: 75%;
                 }
             }
             .lastSection {
                 .imageBox .image{
+                    margin-top: 70px;
                 height: 250px !important;
     
               }
@@ -223,63 +234,43 @@
         }
     }
     @media(max-width: 431px){
+        padding-bottom: 15.5%;
         .container{
-            min-height: 72vh !important;
             .firstSection{
                 width: 90%;
                 .title{
                     font-size: 1.7rem;
-                }
+                    
+                }   
+             
             }
             .lastSection {
                 justify-content: start;
-                padding-top: 110px;
                 .imageBox .image{
                 height: 190px !important;
-    
+                    width: auto !important;
+                    margin-left: 50px;
               }
             }
         }
     }
 
     @media(max-width: 389px){
-        padding-bottom: 15%;
+        padding-bottom: 19%;
         .container {
-            min-height: 0vh !important;
             .firstSection .buttonBox{
-                width: 75%;
+                width: 78%;
             }
         }
     }
 
     @media(max-width: 369px){
-        padding-bottom: 16%;
+        padding-bottom: 28%;
         .container {
-            min-height: 0vh !important;
             .firstSection .buttonBox{
                 width: 90%;
             }
         }
-    }
-    @media(max-width: 337px){
-        padding-bottom: 12%;
-        .container {
-            min-height: 0vh !important;
-            .firstSection .buttonBox{
-                width: 90%;
-            }
-        }
-    }
-    @media(max-width: 334px){
-        padding-bottom: 21%;
-    }
-    @media(max-width: 328px){
-        padding-bottom: 6%;
-
-    }
-
-    @media(max-height: 600px){
-        padding-bottom: 10%;
     }
 
 }
