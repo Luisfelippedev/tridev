@@ -29,13 +29,13 @@ const NavBar = () => {
       <Image className={styles.logo} src={logo} alt="logo" />
       <Box className={styles.menu}>
         <Link
-          to="skills"
+          to="price"
           spy={true}
           smooth={true}
           duration={600}
           className={styles.menuItem}
         >
-          Conheça
+          Preços
         </Link>
         <Link
           to="portfolio"
@@ -47,13 +47,13 @@ const NavBar = () => {
           Portfólio
         </Link>
         <Link
-          to="price"
+          to="About"
           spy={true}
           smooth={true}
           duration={600}
           className={styles.menuItem}
         >
-          Preços
+          Conheça
         </Link>
         <span onClick={handleOpen}>
           {menuAberto ? (
@@ -72,16 +72,52 @@ const NavBar = () => {
           }}
         >
           <MenuItem onClick={handleClose}>
-            <InfoIcon sx={{ color: "#081b4b" }} />
-            &nbsp;Conheça
-          </MenuItem>
-          <MenuItem sx={{ color: "#081b4b" }} onClick={handleClose}>
-            <DashboardIcon />
-            &nbsp;Portfólio
-          </MenuItem>
-          <MenuItem sx={{ color: "#081b4b" }} onClick={handleClose}>
             <MonetizationOnIcon />
-            &nbsp;Preços
+            <Link
+              to="price"
+              spy={true}
+              smooth={true}
+              duration={600}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              &nbsp;<p style={{ color: "#2e2e2e" }}>Preços</p>
+            </Link>
+          </MenuItem>
+          <MenuItem sx={{ color: "#2e2e2e" }} onClick={handleClose}>
+            <DashboardIcon />
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={600}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              &nbsp;<p style={{ color: "#2e2e2e" }}>Portfólio</p>
+            </Link>
+          </MenuItem>
+          <MenuItem sx={{ color: "#2e2e2e" }} onClick={handleClose}>
+            <InfoIcon sx={{ color: "#2e2e2e" }} />
+            <Link
+              to="About"
+              spy={true}
+              smooth={true}
+              duration={600}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              &nbsp;<p style={{ color: "#2e2e2e" }}>Conheça</p>
+            </Link>
           </MenuItem>
         </Menu>
       </Box>
