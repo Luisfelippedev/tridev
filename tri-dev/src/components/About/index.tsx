@@ -12,17 +12,24 @@ const About = () => {
     <Box className={styles.container} id="About">
       <Box className={styles.FirstSection}>
         <Box height={"200px"}>
-          <Image className={styles.ImageFirst} src={ladoaladoImg} alt="logo" />
+          <Image
+            className={styles.ImageFirst}
+            src={ladoaladoImg}
+            alt="logo"
+          />
         </Box>
         <Box className={styles.BoxText}>
           <h3>Sobre nós</h3>
           <h1>Juntos, rumo ao sucesso!</h1>
           <p>
-            Combinando nossa paixão pela tecnologia desde 2017 e uma amizade cultivada desde 2008,
-            somos uma equipe de três pessoas dedicadas. Ao longo dos anos, desenvolvemos nossas ideias e
-            ajudamos nossos clientes a prosperar no mundo da tecnologia moderna. Nossa especialidade reside
-            na criação de sites dinâmicos que se adaptam às rápidas mudanças da era digital. Ao escolher nossa
-            equipe, você está optando pelo caminho da excelência digital, garantindo um futuro promissor para o seu negócio.
+            Combinando nossa paixão pela tecnologia desde 2017 e uma amizade
+            cultivada desde 2008, somos uma equipe de três pessoas dedicadas. Ao
+            longo dos anos, desenvolvemos nossas ideias e ajudamos nossos
+            clientes a prosperar no mundo da tecnologia moderna. Nossa
+            especialidade reside na criação de sites dinâmicos que se adaptam às
+            rápidas mudanças da era digital. Ao escolher nossa equipe, você está
+            optando pelo caminho da excelência digital, garantindo um futuro
+            promissor para o seu negócio.
           </p>
         </Box>
       </Box>
