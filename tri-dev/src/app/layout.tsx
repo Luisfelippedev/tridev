@@ -7,7 +7,8 @@ const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tridev",
-  description: "Faça seu site. Seu site online por um preço acessível, incluindo landign page, e-commerce, blog, portfólio e muito mais. Compre seu site hoje e impulsione sua presença online."
+  description:
+    "Faça seu site. Seu site online por um preço acessível, incluindo landign page, e-commerce, blog, portfólio e muito mais. Compre seu site hoje e impulsione sua presença online.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={poppins.className}>
+      <body suppressHydrationWarning={true} className={poppins.className}>
         <Container>{children}</Container>
       </body>
     </html>
