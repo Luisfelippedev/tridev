@@ -22,12 +22,13 @@ const Header = () => {
           <p className={styles.subTitle}>
             Transformamos sua visão em uma poderosa presença digital.
           </p>
-          <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-          >
-            <Box className={styles.buttonBox}>
+
+          <Box className={styles.buttonBox}>
+            <motion.div
+              initial={{ x: -150, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
               <Scroll to="price" spy={true} smooth={true} duration={600}>
                 <Button
                   className={styles.firstButton}
@@ -38,6 +39,12 @@ const Header = () => {
                   <NavigateNextIcon />
                 </Button>
               </Scroll>
+            </motion.div>
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+            >
               <Button
                 target="_blank"
                 href="https://api.whatsapp.com/send?phone=5583993190450&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20pelo%20Tridev,%20gostaria%20de%20fazer%20uma%20consulta%20sobre%20o%20or%C3%A7amento%20de%20um%20Site."
@@ -48,8 +55,8 @@ const Header = () => {
                 <p className={styles.textButton}>Fale no WhatsApp</p>
                 <NavigateNextIcon />
               </Button>
-            </Box>
-          </motion.div>
+            </motion.div>
+          </Box>
         </Box>
         <Box className={styles.lastSection}>
           <Box className={styles.imageBox}>
