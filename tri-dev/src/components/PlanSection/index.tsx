@@ -1,7 +1,9 @@
+"use client";
 import { Box, Button } from "@mui/material";
 import styles from "./styles.module.scss";
 import { PlanCard } from "../PlanCard";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { motion } from "framer-motion";
 
 export const PlanSection = () => {
   return (
@@ -32,8 +34,20 @@ export const PlanSection = () => {
         </Box>
       </Box>
       <Box className={styles.containerCards}>
-        <PlanCard type="landing-page" />
-        <PlanCard type="site-institucional" />
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
+          <PlanCard type="landing-page" />
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
+          <PlanCard type="site-institucional" />
+        </motion.div>
       </Box>
     </Box>
   );

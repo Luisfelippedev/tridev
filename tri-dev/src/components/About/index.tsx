@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./styles.module.scss";
 import { Box } from "@mui/material";
@@ -12,11 +13,7 @@ const About = () => {
     <Box className={styles.container} id="About">
       <Box className={styles.FirstSection}>
         <Box height={"200px"}>
-          <Image
-            className={styles.ImageFirst}
-            src={ladoaladoImg}
-            alt="logo"
-          />
+          <Image className={styles.ImageFirst} src={ladoaladoImg} alt="logo" />
         </Box>
         <Box className={styles.BoxText}>
           <h3>Sobre nós</h3>
@@ -33,6 +30,7 @@ const About = () => {
           </p>
         </Box>
       </Box>
+
       <Box className={styles.LastSection}>
         <Box className={styles.BoxText}>
           <h3>Aproveite!</h3>

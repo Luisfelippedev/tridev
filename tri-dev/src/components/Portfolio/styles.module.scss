@@ -50,7 +50,7 @@
 
     .title{
         color: $text-color-primary;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         font-weight: 1000;
         text-align: center;
         @media(max-width: 800px){
@@ -58,7 +58,7 @@
             
         }
         @media(max-width: 558px){
-            font-size: 1.6rem;
+            font-size: 1.5rem;
   
         }
     }
@@ -68,7 +68,7 @@
         .cardProject{
             padding: 3% 5%;
             height: auto;
-
+            margin-top: 5%;
         }
         .imagebox{
             object-fit: cover;
@@ -90,7 +90,7 @@
                 top: 0;
                 position: relative;
                 &:hover {
-                    cursor: pointer;
+                    cursor: grab;
                     transition: all 1s linear;
                 }
             }  

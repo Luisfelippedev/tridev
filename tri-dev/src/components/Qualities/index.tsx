@@ -1,8 +1,10 @@
+"use client";
 import styles from "./styles.module.scss";
 import { FaRegHandshake } from "react-icons/fa";
 import { GrSend } from "react-icons/gr";
 import { MdAccessTime } from "react-icons/md";
 import { Box } from "@mui/material";
+import { motion } from "framer-motion";
 
 export const Qualities = () => {
   return (

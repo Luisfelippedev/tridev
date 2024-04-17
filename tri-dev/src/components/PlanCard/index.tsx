@@ -50,8 +50,8 @@ export const PlanCard = ({ type }: Prop) => {
                 alta conversão
               </li>
               <li>
-                <FaCheckCircle className={styles.iconCheck} /> Domínio grátis
-                por 1 ano e Hospedagem que cabe no seu bolso.
+                <FaCheckCircle className={styles.iconCheck} /> Domínio e
+                Hospedagem grátis por 1 ano
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Integração com
@@ -64,6 +64,10 @@ export const PlanCard = ({ type }: Prop) => {
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Certificado de
                 Segurança SSL
+              </li>
+              <li>
+                <FaCheckCircle className={styles.iconCheck} /> Otimização para
+                SEO
               </li>
             </>
           ) : (
@@ -78,7 +82,7 @@ export const PlanCard = ({ type }: Prop) => {
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Domínio e
-                Hospedagem 1 ano grátis
+                Hospedagem grátis por 1 ano
               </li>
               <li>
                 <FaCheckCircle className={styles.iconCheck} /> Integração com
