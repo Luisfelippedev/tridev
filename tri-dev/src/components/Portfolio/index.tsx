@@ -27,7 +27,7 @@ export const Portfolio = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 1500,
+          speed: 700,
         },
       },
       {
@@ -35,7 +35,7 @@ export const Portfolio = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 1700,
+          speed: 700,
         },
       },
       {
@@ -73,17 +73,11 @@ export const Portfolio = () => {
           <Slider {...settings}>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
-                <Link
-                  href={"https://conceitomaximoenade.com.br/"}
-                  target="_blank"
-                  style={{ height: "100%" }}
-                >
-                  <Image
-                    className={styles.imageProjectConceitoMaximo}
-                    src={conceitoMaximoImage}
-                    alt="conceito-max-img"
-                  />
-                </Link>
+                <Image
+                  className={styles.imageProjectConceitoMaximo}
+                  src={conceitoMaximoImage}
+                  alt="conceito-max-img"
+                />
               </Box>
             </Box>
             <Box className={styles.cardProject}>
@@ -106,47 +100,29 @@ export const Portfolio = () => {
             </Box>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
-                <Link
-                  href={"https://kaueronald.vercel.app/"}
-                  target="_blank"
-                  style={{ height: "100%" }}
-                >
-                  <Image
-                    className={styles.imageProjectKauePortfolio}
-                    src={kauePortfolioImage}
-                    alt="kaue-portfolio-img"
-                  />
-                </Link>
+                <Image
+                  className={styles.imageProjectKauePortfolio}
+                  src={kauePortfolioImage}
+                  alt="kaue-portfolio-img"
+                />
               </Box>
             </Box>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
-                <Link
-                  href={"https://luisfelippe.vercel.app/"}
-                  target="_blank"
-                  style={{ height: "100%" }}
-                >
-                  <Image
-                    className={styles.imageProjectLuisPortfolio}
-                    src={luisPortfolioImage}
-                    alt="luis-portfolio-img"
-                  />
-                </Link>
+                <Image
+                  className={styles.imageProjectLuisPortfolio}
+                  src={luisPortfolioImage}
+                  alt="luis-portfolio-img"
+                />
               </Box>
             </Box>
             <Box className={styles.cardProject}>
               <Box className={styles.imagebox}>
-                <Link
-                  href={"https://portifolio-react-nine.vercel.app/"}
-                  target="_blank"
-                  style={{ height: "100%" }}
-                >
-                  <Image
-                    className={styles.imageProjectMatheusPortfolio}
-                    src={matheusPortfolioImage}
-                    alt="matheus-portfolio-img"
-                  />
-                </Link>
+                <Image
+                  className={styles.imageProjectMatheusPortfolio}
+                  src={matheusPortfolioImage}
+                  alt="matheus-portfolio-img"
+                />
               </Box>
             </Box>
           </Slider>

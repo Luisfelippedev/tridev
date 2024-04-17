@@ -29,7 +29,7 @@
             padding: 22% 0;
         }
         .titleText{
-            font-size: 3rem;
+            font-size: 2.1rem;
             font-weight: 1000;
             @media(max-width: 567px){
                 width: 80%;
@@ -47,6 +47,7 @@
             justify-content: center;
             @media(max-width: 1017px){
                 grid-template-columns: repeat(1, 1fr);
+
             }
 
             .card{
@@ -83,6 +84,7 @@
                     .lastImageProject{
                         object-fit: contain;
                         width: 23%;
+                        margin-top: 10px;
                         height: auto;
                     }
                 }
@@ -93,7 +95,7 @@
                     font-weight: 700;
                     height: auto;
                     color: $primary-soft;
-                    text-align: center;
+                    text-align: left;
                 }
                 .list{
                     text-decoration: none;
@@ -194,9 +196,6 @@
             }
         }
         @media(max-width: 1017px){
-            .cardBox{
-                gap: 0;
-            }
             .cardBox .card{
                 height: 200px;
                 width: 700px;
@@ -210,7 +209,6 @@
                 }
                 .imageBox .lastImageProject{
                     width: 35%;
-     
                 }
                 .imageBox{
                     width: auto;
@@ -306,7 +304,7 @@
                     width: 45%;
                 }
                 .imageBox .lastImageProject{
-                    width: 25%;
+                    width: 23%;
      
                 }
                 .imageBox{
