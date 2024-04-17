@@ -9,7 +9,6 @@ import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -26,12 +25,6 @@ const NavBar = () => {
   };
 
   return (
-    <motion.div
-    initial={{ y: -50, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.2, ease: "easeOut" }}
-    className={styles.navbar}
-  >
     <Box className={styles.container}>
       <Image className={styles.logo} src={logo} alt="logo" />
       <Box className={styles.menu}>
@@ -129,7 +122,6 @@ const NavBar = () => {
         </Menu>
       </Box>
     </Box>
-  </motion.div>
   );
 };
 
