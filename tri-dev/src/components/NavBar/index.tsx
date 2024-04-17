@@ -78,6 +78,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={600}
+              onClick={handleClose}
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -94,6 +95,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={600}
+              onClick={handleClose}
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -110,6 +112,7 @@ const NavBar = () => {
               spy={true}
               smooth={true}
               duration={600}
+              onClick={handleClose}
               style={{
                 display: "flex",
                 justifyContent: "center",
