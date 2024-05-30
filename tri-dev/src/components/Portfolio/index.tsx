@@ -13,6 +13,7 @@ import matheusPortfolioImage from "../../../public/cards/MatheusP.png";
 import conceitoMaximoImage from "../../../public/cards/conceito-maximo.png";
 import pbNetImage from "../../../public/cards/pbnet.png";
 import helpSaudeImage from "../../../public/cards/help-saude.png";
+import chacaraDandao from "../../../public/cards/chacara-dandao.jpg";
 
 export const Portfolio = () => {
   const settings = {
@@ -95,6 +96,15 @@ export const Portfolio = () => {
                   className={styles.imageProjectPbNet}
                   src={pbNetImage}
                   alt="pb-net-img"
+                />
+              </Box>
+            </Box>
+            <Box className={styles.cardProject}>
+              <Box className={styles.imagebox}>
+                <Image
+                  className={styles.imageProjectChacaraDandao}
+                  src={chacaraDandao}
+                  alt="chacara-dandao"
                 />
               </Box>
             </Box>
